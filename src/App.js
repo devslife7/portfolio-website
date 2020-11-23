@@ -5,6 +5,7 @@ import Contact from "./components/Contact"
 import Header from "./components/Header"
 import Projects from "./components/Projects"
 import background1 from "./images/background1.jpg"
+import Footer from "./components/Footer"
 
 import HeroSection from "./components/HeroSection"
 
@@ -24,6 +25,7 @@ function App() {
       <Grid item style={{ backgroundColor: "#f4f4f4", height: "40rem" }}>
         <Contact />
       </Grid>
+      <Footer />
       {/* </Grid> */}
     </>
   )

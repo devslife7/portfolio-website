@@ -65,13 +65,12 @@ export default function Footer() {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/' onClick={toggleHome}>
-              MarcVit
-            </SocialLogo>
+            {/* <SocialLogo to='/' onClick={toggleHome}> */}
+            MarcVit
+            {/* </SocialLogo> */}
             <WebsiteRights>
-              Copyright © {new Date().getFullYear()} MarcVit, LLC. All rights reserved.
+              Copyright © {new Date().getFullYear()} Marcos Velasco. All rights reserved.
             </WebsiteRights>
-
             <SocialIcons>
               <SocialIconLink
                 href='https://www.linkedin.com/in/marcos-velasco-1b07a7189/'
