@@ -16,11 +16,8 @@ import {
 } from "./InfoElements"
 
 export default function InfoSection({
-  lightBg,
   id,
-  imgStart,
   topLine,
-  lightText,
   headline,
   darkText,
   description,
@@ -31,16 +28,18 @@ export default function InfoSection({
   dark,
   dark2,
   darkTheme,
+  flipped,
 }) {
   return (
     <>
       <InfoContainer darkTheme={darkTheme} id={id}>
         <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+          <InfoRow flipped={flipped}>
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
+                <Heading darkTheme={darkTheme}>{headline}</Heading>
+
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button

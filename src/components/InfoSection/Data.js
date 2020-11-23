@@ -1,22 +1,26 @@
 export const projectObjOne = {
   id: "triviapp",
-  darkTheme: true,
-  lightText: false,
-  lightTextDesc: false,
+  darkTheme: false,
+  flipped: false,
+
+  dark: false,
+  primary: false,
+  darkText: false,
+
+  img: require("../../images/svg-1.svg"),
+  alt: "triviapp preview",
+
   topLine: "React, Redux, Material UI",
   headline: "Triviapp",
   description: "Play a game of Trivia with your friends",
   buttonLabel: "Live Demo",
-  imgStart: false,
-  img: require("../../images/svg-1.svg"),
-  alt: "triviapp preview",
-  dark: false,
-  primary: false,
-  darkText: true,
 }
 
 export const projectObjTwo = {
   id: "futfriends",
+  darkTheme: true,
+  flipped: true,
+
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -34,7 +38,9 @@ export const projectObjTwo = {
 
 export const projectObjThree = {
   id: "protask",
-  darkTheme: true,
+  darkTheme: false,
+  flipped: false,
+
   lightText: false,
   lightTextDesc: false,
   topLine: "React, Redux, Material UI",
@@ -51,6 +57,9 @@ export const projectObjThree = {
 
 export const projectObjFour = {
   id: "netflix",
+  darkTheme: true,
+  flipped: true,
+
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
