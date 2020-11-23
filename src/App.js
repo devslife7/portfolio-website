@@ -9,18 +9,14 @@ import Footer from "./components/Footer"
 import { BrowserRouter as Router } from "react-router-dom"
 
 import HeroSection from "./components/HeroSection"
+import InfoSection from "./components/InfoSection/Index"
 
 function App() {
   return (
     <>
       <Router>
         <HeroSection />
-
-        {/* <Grid container direction='column' className='App'>
-      <Grid item style={{ backgroundColor: "#f4f4f4", height: "40rem" }}>
-        <img src={require("./images/svg-1.svg")} alt='background' />
-        <Header />
-      </Grid> */}
+        <InfoSection />
         <Grid item style={{ height: "40rem" }}>
           <Projects />
         </Grid>
@@ -28,7 +24,6 @@ function App() {
           <Contact />
         </Grid>
         <Footer />
-        {/* </Grid> */}
       </Router>
     </>
   )
