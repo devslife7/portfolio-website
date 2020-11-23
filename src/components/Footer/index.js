@@ -65,9 +65,9 @@ export default function Footer() {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            {/* <SocialLogo to='/' onClick={toggleHome}> */}
-            MarcVit
-            {/* </SocialLogo> */}
+            <SocialLogo to='/' onClick={toggleHome}>
+              Marcos Velasco
+            </SocialLogo>
             <WebsiteRights>
               Copyright © {new Date().getFullYear()} Marcos Velasco. All rights reserved.
             </WebsiteRights>
