@@ -37,10 +37,9 @@ export const projectObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "business services",
-  headline: "Solutions that meet your needs",
-  description:
-    "We create custom and responsive web applications to saves you time when it comes to managing you business",
+  topLine: "React, Redux, Material UI",
+  headline: "ProTask",
+  description: "Helps your teams to organize, track, and manage their work",
   buttonLabel: "Live Demo",
   imgStart: false,
   img: require("../../images/svg-1.svg"),
