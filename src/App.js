@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 
 import HeroSection from "./components/HeroSection"
 import InfoSection from "./components/InfoSection/Index"
-import { projectObjFour, projectObjOne, projectObjThree, projectObjTwo } from "./components/InfoSection/Data"
+import { triviappObj, futFriendsObj, proTaskObj, netflixObj } from "./components/InfoSection/Data"
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
       <Router>
         <HeroSection />
 
-        <InfoSection {...projectObjOne} />
-        <InfoSection {...projectObjTwo} />
-        <InfoSection {...projectObjThree} />
-        <InfoSection {...projectObjFour} />
+        <InfoSection {...futFriendsObj} />
+        <InfoSection {...proTaskObj} />
+        <InfoSection {...triviappObj} />
+        <InfoSection {...netflixObj} />
 
         <Grid item style={{ backgroundColor: "#f4f4f4", height: "40rem" }}>
           <Contact />

@@ -19,14 +19,10 @@ export default function InfoSection({
   id,
   topLine,
   headline,
-  darkText,
   description,
   buttonLabel,
   img,
   alt,
-  primary,
-  dark,
-  dark2,
   darkTheme,
   flipped,
 }) {
@@ -40,7 +36,7 @@ export default function InfoSection({
                 <TopLine>{topLine}</TopLine>
                 <Heading darkTheme={darkTheme}>{headline}</Heading>
 
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkTheme={darkTheme}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
                     to='home'
@@ -49,9 +45,8 @@ export default function InfoSection({
                     spy={true}
                     exact='true'
                     offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
+                    primary={darkTheme ? 1 : 0}
+                    dark={darkTheme ? 1 : 0}
                   >
                     {buttonLabel}
                   </Button>

@@ -1,11 +1,7 @@
-export const projectObjOne = {
+export const triviappObj = {
   id: "triviapp",
   darkTheme: false,
   flipped: false,
-
-  dark: false,
-  primary: false,
-  darkText: false,
 
   img: require("../../images/svg-1.svg"),
   alt: "triviapp preview",
@@ -16,61 +12,44 @@ export const projectObjOne = {
   buttonLabel: "Live Demo",
 }
 
-export const projectObjTwo = {
+export const futFriendsObj = {
   id: "futfriends",
-  darkTheme: true,
-  flipped: true,
+  darkTheme: false,
+  flipped: false,
 
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  img: require("../../images/svg-1.svg"),
+  alt: "FutFriends preview",
+
   topLine: "React, Redux, Material UI",
   headline: "FutFriends",
   description: "Look up popular upcoming matches and create watchparty with your friends",
   buttonLabel: "Live Demo",
-  imgStart: true,
-  img: require("../../images/svg-1.svg"),
-  alt: "FutFriends preview",
-  dark: true,
-  primary: true,
-  darkText: false,
 }
 
-export const projectObjThree = {
+export const proTaskObj = {
   id: "protask",
-  darkTheme: false,
-  flipped: false,
+  darkTheme: true,
+  flipped: true,
 
-  lightText: false,
-  lightTextDesc: false,
+  img: require("../../images/svg-1.svg"),
+  alt: "protask preview",
+
   topLine: "React, Redux, Material UI",
   headline: "ProTask",
   description: "Helps your teams to organize, track, and manage their work",
   buttonLabel: "Live Demo",
-  imgStart: false,
-  img: require("../../images/svg-1.svg"),
-  alt: "protask preview",
-  dark: false,
-  primary: false,
-  darkText: true,
 }
 
-export const projectObjFour = {
+export const netflixObj = {
   id: "netflix",
   darkTheme: true,
   flipped: true,
 
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  img: require("../../images/svg-1.svg"),
+  alt: "browse netflix preview",
+
   topLine: "React, Material UI",
   headline: "Browse Netflix",
   description: "Browse the entire Netflix Library",
   buttonLabel: "Live Demo",
-  imgStart: true,
-  img: require("../../images/svg-1.svg"),
-  alt: "browse netflix preview",
-  dark: true,
-  primary: true,
-  darkText: false,
 }
