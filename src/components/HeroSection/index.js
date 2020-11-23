@@ -20,8 +20,8 @@ export default function HeroSection() {
   return (
     <HeroContainer id='Home'>
       <HeroContent>
-        <HeroH1>We Help your Business </HeroH1>
-        <HeroP>Services and web applications to help companies manage thier work.</HeroP>
+        <HeroH1>Marcos Velasco</HeroH1>
+        <HeroP>Full Stach Software Engineer</HeroP>
         <HeroBtnWrapper>
           <LinkBtn
             to='services'
@@ -33,7 +33,7 @@ export default function HeroSection() {
             onMouseLeave={onHover}
             primary='true'
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            Projects {hover ? <ArrowForward /> : <ArrowRight />}
           </LinkBtn>
         </HeroBtnWrapper>
       </HeroContent>
