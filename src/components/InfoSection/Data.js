@@ -1,6 +1,6 @@
 export const projectObjOne = {
   id: "triviapp",
-  lightBg: true,
+  darkTheme: true,
   lightText: false,
   lightTextDesc: false,
   topLine: "React, Redux, Material UI",
@@ -34,7 +34,7 @@ export const projectObjTwo = {
 
 export const projectObjThree = {
   id: "protask",
-  lightBg: true,
+  darkTheme: true,
   lightText: false,
   lightTextDesc: false,
   topLine: "React, Redux, Material UI",

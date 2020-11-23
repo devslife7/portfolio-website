@@ -30,10 +30,11 @@ export default function InfoSection({
   primary,
   dark,
   dark2,
+  darkTheme,
 }) {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer darkTheme={darkTheme} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
