@@ -4,7 +4,7 @@ import React from "react"
 export default function Contact() {
   return (
     <>
-      <Container>
+      <Container style={{ textAlign: "center" }}>
         <Grid container direction='column'>
           <Typography variant='h4' style={{ marginTop: "4rem" }}>
             Contact

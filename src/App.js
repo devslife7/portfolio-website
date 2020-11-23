@@ -23,9 +23,6 @@ function App() {
         <InfoSection {...projectObjThree} />
         <InfoSection {...projectObjFour} />
 
-        <Grid item style={{ height: "40rem" }}>
-          <Projects />
-        </Grid>
         <Grid item style={{ backgroundColor: "#f4f4f4", height: "40rem" }}>
           <Contact />
         </Grid>
