@@ -10,14 +10,19 @@ import { BrowserRouter as Router } from "react-router-dom"
 
 import HeroSection from "./components/HeroSection"
 import InfoSection from "./components/InfoSection/Index"
-import { homeObjOne } from "./components/InfoSection/Data"
+import { projectObjFour, projectObjOne, projectObjThree, projectObjTwo } from "./components/InfoSection/Data"
 
 function App() {
   return (
     <>
       <Router>
         <HeroSection />
-        <InfoSection {...homeObjOne} />
+
+        <InfoSection {...projectObjOne} />
+        <InfoSection {...projectObjTwo} />
+        <InfoSection {...projectObjThree} />
+        <InfoSection {...projectObjFour} />
+
         <Grid item style={{ height: "40rem" }}>
           <Projects />
         </Grid>
