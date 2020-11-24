@@ -89,9 +89,13 @@ export default function Footer() {
               >
                 <FaFacebook />
               </SocialIconLink>
-              {/* <SocialIconLink href='/' target='_blank' arial-label='Instagram'>
+              <SocialIconLink
+                href='https://www.instagram.com/markuz1457'
+                target='_blank'
+                arial-label='Instagram'
+              >
                 <FaInstagram />
-              </SocialIconLink> */}
+              </SocialIconLink>
               {/* <SocialIconLink href='/' target='_blank' arial-label='Youtube'>
                 <FaYoutube />
               </SocialIconLink> */}
