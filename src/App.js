@@ -17,6 +17,10 @@ function App() {
     <>
       <Router>
         <HeroSection />
+        <div style={{ textAlign: "center" }}>
+          <h3>Skills</h3>
+          <p>Ruby, Rails, Postgres, SQL, Javascript (ES6), React, Redux, Thunk, Heroku, HTML, CSS, Git</p>
+        </div>
 
         <InfoSection {...futFriendsObj} />
         <InfoSection {...proTaskObj} />
