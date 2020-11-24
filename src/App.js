@@ -30,6 +30,11 @@ function App() {
         <Grid item style={{ backgroundColor: "#f4f4f4", height: "40rem" }}>
           <Contact />
         </Grid>
+
+        <div style={{ textAlign: "center" }}>
+          <h3>Contact Me</h3>
+          <p>Send me a message</p>
+        </div>
         <Footer />
       </Router>
     </>
