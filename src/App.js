@@ -25,6 +25,8 @@ function App() {
           <span>Rails</span>
           <img style={{ width: "50px" }} src={require("./images/postgresql-logo.png")} alt='rails logo' />
           <span>Postgress</span>
+          <img style={{ width: "50px" }} src={require("./images/sqlite-logo.png")} alt='postgress logo' />
+          <span>SQLite</span>
           <img style={{ width: "50px" }} src={require("./images/sql-logo.jpg")} alt='postgress logo' />
           <span>SQL</span>
           <img style={{ width: "50px" }} src={require("./images/javascript-logo.png")} alt='sql logo' />
@@ -33,13 +35,13 @@ function App() {
           <span>React</span>
           <img style={{ width: "50px" }} src={require("./images/redux-logo.png")} alt='javascript logo' />
           <span>Redux</span>
-          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='redux logo' />
+          <img style={{ width: "50px" }} src={require("./images/redux-logo.png")} alt='redux logo' />
           <span>Thunk</span>
           <img style={{ width: "50px" }} src={require("./images/heroku-logo.png")} alt='thunk logo' />
           <span>Heroku</span>
-          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='heroku logo' />
+          <img style={{ width: "50px" }} src={require("./images/html-logo.png")} alt='heroku logo' />
           <span>HTML</span>
-          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='html logo' />
+          <img style={{ width: "50px" }} src={require("./images/css-logo.png")} alt='html logo' />
           <span>CSS</span>
           <img style={{ width: "50px" }} src={require("./images/git-logo.png")} alt='css logo' />
           <span>Git</span>
