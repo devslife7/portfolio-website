@@ -17,7 +17,7 @@ export const futFriendsObj = {
   darkTheme: false,
   flipped: false,
 
-  img: require("../../images/svg-1.svg"),
+  img: require("../../images/futFriends.png"),
   alt: "FutFriends preview",
 
   topLine: "React, Redux, Material UI",
@@ -31,7 +31,7 @@ export const proTaskObj = {
   darkTheme: true,
   flipped: true,
 
-  img: require("../../images/svg-1.svg"),
+  img: require("../../images/protask.png"),
   alt: "protask preview",
 
   topLine: "React, Redux, Material UI",
@@ -45,7 +45,7 @@ export const netflixObj = {
   darkTheme: true,
   flipped: true,
 
-  img: require("../../images/svg-1.svg"),
+  img: require("../../images/netflix.png"),
   alt: "browse netflix preview",
 
   topLine: "React, Material UI",
