@@ -43,6 +43,8 @@ function App() {
           <span>HTML</span>
           <img style={{ width: "50px" }} src={require("./images/css-logo.png")} alt='html logo' />
           <span>CSS</span>
+          <img style={{ width: "50px" }} src={require("./images/materialui-logo.png")} alt='css logo' />
+          <span>Material UI</span>
           <img style={{ width: "50px" }} src={require("./images/git-logo.png")} alt='css logo' />
           <span>Git</span>
           <img style={{ width: "50px" }} src={require("./images/github-logo.png")} alt='css logo' />
