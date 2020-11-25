@@ -19,7 +19,30 @@ function App() {
         <HeroSection />
         <div style={{ textAlign: "center" }}>
           <h3>Skills</h3>
-          <p>Ruby, Rails, Postgres, SQL, Javascript (ES6), React, Redux, Thunk, Heroku, HTML, CSS, Git</p>
+          <span>Ruby</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='ruby logo' />
+          <span>Rails</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='rails logo' />
+          <span>Postgress</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='postgress logo' />
+          <span>SQL</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='sql logo' />
+          <span>Javascript (ES6)</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='javascript logo' />
+          <span>Rails</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='rails logo' />
+          <span>Redux</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='redux logo' />
+          <span>Thunk</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='thunk logo' />
+          <span>Heroku</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='heroku logo' />
+          <span>HTML</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='html logo' />
+          <span>CSS</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='css logo' />
+          <span>Git</span>
+          <img style={{ width: "50px" }} src={require("./images/ruby-logo.png")} alt='git logo' />
         </div>
 
         <InfoSection {...futFriendsObj} />
