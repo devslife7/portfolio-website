@@ -3,7 +3,7 @@ export const triviappObj = {
   darkTheme: false,
   flipped: false,
 
-  img: require("../../images/svg-1.svg"),
+  img: require("../../images/triviapp.png"),
   alt: "triviapp preview",
 
   topLine: "React, Redux, Material UI",
