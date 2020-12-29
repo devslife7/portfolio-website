@@ -37,6 +37,8 @@ export default function Skills() {
       <span>Git</span>
       <img style={{ width: "50px" }} src={require("../../images/github-logo.png")} alt='css logo' />
       <span>Github</span>
+      <img style={{ width: "50px" }} src={require("../../images/json-logo.png")} alt='json logo' />
+      <span>JSON</span>
     </div>
   )
 }
