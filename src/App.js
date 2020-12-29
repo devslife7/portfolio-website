@@ -20,10 +20,10 @@ function App() {
         <HeroSection />
         <Skills />
 
-        <InfoSection {...futFriendsObj} />
+        {/* <InfoSection {...futFriendsObj} />
         <InfoSection {...proTaskObj} />
         <InfoSection {...triviappObj} />
-        <InfoSection {...netflixObj} />
+        <InfoSection {...netflixObj} /> */}
 
         <div style={{ textAlign: "center" }}>
           <h3>Contact Me</h3>
