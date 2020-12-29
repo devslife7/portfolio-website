@@ -38,7 +38,9 @@ export default function Skills() {
       <img style={{ width: "50px" }} src={require("../../images/github-logo.png")} alt='css logo' />
       <span>Github</span>
       <img style={{ width: "50px" }} src={require("../../images/json-logo.png")} alt='json logo' />
-      <span>JSON</span>
+      <span>json</span>
+      <img style={{ width: "50px" }} src={require("../../images/aws-logo.png")} alt='json logo' />
+      <span>Amazon Web Services </span>
     </div>
   )
 }
