@@ -15,8 +15,8 @@ export default function Skills() {
       <span>SQLite</span>
       <img style={{ width: "50px" }} src={require("../../images/sql-logo.jpg")} alt='postgress logo' />
       <span>SQL</span>
-      <img style={{ width: "50px" }} src={require("../../images/javascript-logo.png")} alt='sql logo' />
       <h3>Front End</h3>
+      <img style={{ width: "50px" }} src={require("../../images/javascript-logo.png")} alt='sql logo' />
       <span>Javascript (ES6)</span>
       <img style={{ width: "50px" }} src={require("../../images/react-logo.png")} alt='rails logo' />
       <span>React</span>
@@ -30,8 +30,8 @@ export default function Skills() {
       <span>CSS</span>
       <img style={{ width: "50px" }} src={require("../../images/materialui-logo.png")} alt='css logo' />
       <span>Material UI</span>
-      <img style={{ width: "50px" }} src={require("../../images/heroku-logo.png")} alt='thunk logo' />
       <h3>Other</h3>
+      <img style={{ width: "50px" }} src={require("../../images/heroku-logo.png")} alt='thunk logo' />
       <span>Heroku</span>
       <img style={{ width: "50px" }} src={require("../../images/git-logo.png")} alt='css logo' />
       <span>Git</span>
