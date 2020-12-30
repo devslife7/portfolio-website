@@ -8,7 +8,7 @@ export const triviappObj = {
 
   topLine: "React, Redux, Material UI",
   headline: "Triviapp",
-  description: "Play a game of Trivia with your friends",
+  description: "Play a game of Trivia solo or with your friends",
   buttonLabel: "Live Demo",
 }
 
@@ -27,15 +27,15 @@ export const futFriendsObj = {
 }
 
 export const proTaskObj = {
-  id: "protask",
+  id: "protaskr",
   darkTheme: true,
   flipped: true,
 
   img: require("../../images/protask.png"),
-  alt: "protask preview",
+  alt: "proTaskr preview",
 
   topLine: "React, Redux, Material UI",
-  headline: "ProTask",
+  headline: "proTaskr",
   description: "Helps your teams to organize, track, and manage their work",
   buttonLabel: "Live Demo",
 }
@@ -49,7 +49,7 @@ export const netflixObj = {
   alt: "browse netflix preview",
 
   topLine: "React, Material UI",
-  headline: "Browse Netflix",
+  headline: "Netflix Clone",
   description: "Browse the entire Netflix Library",
   buttonLabel: "Live Demo",
 }
