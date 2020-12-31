@@ -21,10 +21,10 @@ export default function HeroSection() {
     <HeroContainer id='Home'>
       <HeroContent>
         <HeroH1>Marcos Velasco</HeroH1>
-        <HeroP>Full Stach Software Engineer</HeroP>
+        <HeroP>Full Stach Software Developer</HeroP>
         <HeroBtnWrapper>
           <LinkBtn
-            to='services'
+            to='futfriends'
             smooth='true'
             duration={500}
             spy={true}
