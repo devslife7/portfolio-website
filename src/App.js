@@ -24,7 +24,6 @@ function App() {
         <InfoSection {...proTaskObj} />
         <InfoSection {...triviappObj} />
         <InfoSection {...netflixObj} />
-        <InfoSection {...netflixObj} />
 
         <div style={{ textAlign: "center" }}>
           <h3>Contact Me</h3>
