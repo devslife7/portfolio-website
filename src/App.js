@@ -25,10 +25,8 @@ function App() {
         <InfoSection {...triviappObj} />
         <InfoSection {...netflixObj} />
 
-        <div style={{ textAlign: "center" }}>
-          <h3>Contact Me</h3>
-          <p>Send me a message at: devslife7@gmail.com</p>
-        </div>
+        <Contact />
+        
         <Footer />
       </Router>
     </>
