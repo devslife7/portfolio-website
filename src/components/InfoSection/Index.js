@@ -1,5 +1,6 @@
 import React from "react"
 import { Button } from "../ButtonElements"
+import {Button as ButtonUI} from "@material-ui/core"
 import {
   BtnWrap,
   Column1,
@@ -25,6 +26,7 @@ export default function InfoSection({
   alt,
   darkTheme,
   flipped,
+  projectLink
 }) {
   return (
     <>
@@ -52,6 +54,7 @@ export default function InfoSection({
                   </Button>
                 </BtnWrap>
               </TextWrapper>
+              <a href={projectLink} target='_blank' arial-label='project link'>Live Demo</a>
             </Column1>
             <Column2>
               <ImgWrap>
