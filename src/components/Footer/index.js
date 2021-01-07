@@ -1,13 +1,13 @@
 import React from "react"
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa"
 import { animateScroll as scroll } from "react-scroll"
 import {
   FooterContainer,
-  FooterLink,
-  FooterLinkItems,
+  // FooterLink,
+  // FooterLinkItems,
   FooterLinksContainer,
   FooterLinksWrapper,
-  FooterLinkTitle,
+  // FooterLinkTitle,
   FooterWrap,
   SocialIconLink,
   SocialIcons,
