@@ -16,10 +16,10 @@ function App() {
         <HeroSection />
         <Skills />
 
-        <InfoSection {...futFriendsObj} />
-        <InfoSection {...proTaskObj} />
-        <InfoSection {...triviappObj} />
         <InfoSection {...netflixObj} />
+        <InfoSection {...proTaskObj} />
+        <InfoSection {...futFriendsObj} />
+        <InfoSection {...triviappObj} />
 
         <Contact />
 
