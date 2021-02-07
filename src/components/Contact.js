@@ -16,7 +16,7 @@ export default function Contact() {
             Alexandria, VA
           </Typography>
           <Typography variant='subtitle1' style={{ margin: "2rem 0" }}>
-            devslife7@gmail.com
+            Send me a message: devslife7@gmail.com
           </Typography>
         </Grid>
       </Container>
