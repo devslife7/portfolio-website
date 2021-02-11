@@ -48,12 +48,12 @@ export const netflixObj = {
   darkTheme: true,
   flipped: true,
 
-  img: require("../../images/netflix.png"),
+  img: require("../../images/netflix-clone.png"),
   alt: "browse netflix preview",
 
   topLine: "React, Material UI",
   headline: "Netflix Clone",
   description: "Browse the entire Netflix Library",
   buttonLabel: "Live Demo",
-  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png"
+  projectLink: "https://netflix-clone-9e2cc.web.app/"
 }
