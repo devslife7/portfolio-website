@@ -18,8 +18,9 @@ export default function HeroSection() {
   }
 
   return (
-    <HeroContainer id='Home'>
+    <HeroContainer id='Home' style={{ fontFamily: 'Ubuntu, sans-serif'}}>
       <HeroContent>
+        <HeroP>Hello, my name is</HeroP>
         <HeroH1>Marcos Velasco</HeroH1>
         <HeroP>Full Stach Software Developer</HeroP>
         <HeroBtnWrapper>

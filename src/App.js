@@ -8,11 +8,14 @@ import HeroSection from "./components/HeroSection"
 import InfoSection from "./components/InfoSection/Index"
 import { triviappObj, futFriendsObj, proTaskObj, netflixObj } from "./components/InfoSection/Data"
 import Skills from "./components/Skills"
+import Navbar from "./components/Navbar"
+import About from "./components/About"
 
 function App() {
   return (
     <>
       <Router>
+        <Navbar />
         <HeroSection />
         <Skills />
 
@@ -21,6 +24,8 @@ function App() {
         <InfoSection {...triviappObj} />
         <InfoSection {...netflixObj} />
 
+        <About />
+        
         <Contact />
 
         <Footer />
