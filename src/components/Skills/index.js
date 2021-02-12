@@ -3,7 +3,7 @@ import React from "react"
 export default function Skills() {
   return (
     <div style={{ textAlign: "center" }}>
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <h3>Back End</h3>
       <img style={{ width: "50px" }} src={require("../../images/ruby-logo.png")} alt='ruby logo' />
       <span>Ruby</span>
@@ -41,6 +41,8 @@ export default function Skills() {
       <span>json</span>
       <img style={{ width: "50px" }} src={require("../../images/aws-logo.png")} alt='json logo' />
       <span>Amazon Web Services </span>
+      <img style={{ width: "50px" }} src={require("../../images/aws-logo.png")} alt='json logo' />
+      <span>Firebase</span>
     </div>
   )
 }
