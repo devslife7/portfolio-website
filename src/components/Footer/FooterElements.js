@@ -56,7 +56,6 @@ export const FooterLinkTitle = styled.h1`
 
 export const FooterLink = styled(Link)`
   color: #fff;
-  text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
 
@@ -87,7 +86,6 @@ export const SocialLogo = styled(Link)`
   color: #fff;
   justify-self: start;
   cursor: pointer;
-  text-decoration: none;
   font-size: 1.5rem;
   display: flex;
   align-items: center;

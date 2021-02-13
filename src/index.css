@@ -21,5 +21,9 @@ code {
 }
 
 :root {
-  --color-main: rgb(28, 161, 242);
+  /* --color-primary: rgb(28, 161, 242); */
+  --color-primary: #01bf71;
+  /* --color-primary: #dc133d; */
+
+  /* --color-secondary: #01bf71; */
 }

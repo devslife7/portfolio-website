@@ -1,23 +1,15 @@
 import React, { useEffect, useState } from "react"
 import { FaBars } from "react-icons/fa"
+import './Navbar.css'
 import { animateScroll as scroll } from "react-scroll"
-import {
-  MobileIcon,
-  Nav,
-  NavbarContainer,
-  // NavBtn,
-  // NavBtnLink,
-  NavItem,
-  NavLinks,
-  NavLogo,
-  NavMenu,
-} from "./NavbarElements"
+import { Link } from "react-scroll"
+import { MobileIcon, NavItem, NavLinks, NavLogo, NavMenu } from "./NavbarElements"
 
 export default function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 100) {
       setScrollNav(true)
     } else {
       setScrollNav(false)
@@ -34,43 +26,44 @@ export default function Navbar({ toggle }) {
 
   return (
     <>
-      <Nav scrollNav={scrollNav}>
-        <NavbarContainer style={{ fontFamily: "Ubuntu, sans-serif"}}>
-          <NavLogo to='/' onClick={toggleHome}>
-            Portfolio
-          </NavLogo>
-          <MobileIcon onClick={toggle}>
+      <div className={`nav ${scrollNav && "nav--background"}`}>
+        <div className="nav__container">
+          
+          <div className="nav__logo" onClick={toggleHome}>
+            Portfo<span style={{ color: 'red'}}>lio</span>
+          </div>
+          <div className="nav__mobileIcon" onClick={toggle}>
             <FaBars />
-          </MobileIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks to='services' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+          </div>
+          <ul className="nav__menu">
+            <div className="nav__item">
+              <Link className="nav__link" to='Home' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Home
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='about' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              </Link>
+            </div>
+            <div className="nav__item">
+              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Skills
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='services' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              </Link>
+            </div>
+            <div className="nav__item">
+              <NavLinks to='futfriends' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Projects
               </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='services' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+            </div>
+            <div className="nav__item">
+              <NavLinks to='about' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 About
               </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='discover' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+            </div>
+            <div className="nav__item">
+              <NavLinks to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Contact
               </NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
+            </div>
+          </ul>
+        </div>
+      </div>
     </>
   )
 }

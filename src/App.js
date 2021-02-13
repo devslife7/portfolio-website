@@ -17,6 +17,8 @@ function App() {
         <HeroSection />
         <Skills />
 
+        <Projects />
+
         <InfoSection {...futFriendsObj} />
         <InfoSection {...proTaskObj} />
         <InfoSection {...triviappObj} />
