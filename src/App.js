@@ -1,5 +1,4 @@
 import React from "react"
-import "./App.css"
 import { BrowserRouter as Router } from "react-router-dom"
 import { triviappObj, futFriendsObj, proTaskObj, netflixObj } from "./components/InfoSection/Data"
 import HeroSection from "./components/HeroSection"
