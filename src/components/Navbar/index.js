@@ -37,7 +37,7 @@ export default function Navbar({ toggle }) {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer style={{ fontFamily: "Ubuntu, sans-serif"}}>
           <NavLogo to='/' onClick={toggleHome}>
-            Portfolio.
+            Portfolio
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />

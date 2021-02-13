@@ -22,7 +22,7 @@ export default function HeroSection() {
       <HeroContent>
         <HeroP>Hello, my name is</HeroP>
         <HeroH1>Marcos Velasco</HeroH1>
-        <HeroP>Full Stach Software Developer</HeroP>
+        <HeroP>And I'm a Full Stack Software Developer</HeroP>
         <HeroBtnWrapper>
           <LinkBtn
             to='futfriends'

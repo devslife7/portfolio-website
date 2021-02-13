@@ -6,7 +6,7 @@ export default function About() {
     <div className='about'>
       <h2>About me</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec ultricies neque. Pellentesque sed fermentum tellus. Etiam gravida neque sit amet volutpat hendrerit. Proin ligula tellus, elementum quis porttitor et, lacinia ut odio. Pellentesque at erat bibendum, placerat nulla non, feugiat libero. Suspendisse semper purus non tellus tincidunt, at posuere est vehicula. Aenean sollicitudin libero non ante blandit, ut venenatis ante ullamcorper.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque quis augue dapibus, vehicula purus eget, mattis purus. Donec suscipit porttitor mi sit amet euismod. Mauris condimentum, purus a sodales mollis, erat quam imperdiet velit, ut porta tortor dui non nunc. Aliquam erat volutpat. In ultricies lectus vel tincidunt eleifend. Cras pulvinar sagittis massa sit amet condimentum. Phasellus ac nibh vel erat malesuada sodales id laoreet eros.
       </p>
     </div>
   )
