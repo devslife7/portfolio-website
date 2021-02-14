@@ -47,7 +47,7 @@ export default function Navbar({ toggle }) {
               </Link>
             </div>
             <div className="nav__item">
-              <Link className="nav__link" to='futfriends' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Projects
               </Link>
             </div>

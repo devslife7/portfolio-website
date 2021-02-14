@@ -14,9 +14,9 @@ import {
   TextWrapper,
   TopLine,
   Img,
-} from "./InfoElements"
+} from "./ProjectElements"
 
-export default function InfoSection({
+export default function Projects({
   id,
   topLine,
   headline,

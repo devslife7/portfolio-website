@@ -1,8 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router } from "react-router-dom"
-import { triviappObj, futFriendsObj, proTaskObj, netflixObj } from "./components/InfoSection/Data"
 import HeroSection from "./components/HeroSection"
-import InfoSection from "./components/InfoSection/Index"
 import Navbar from "./components/Navbar"
 import Skills from "./components/Skills"
 import About from "./components/About"
@@ -19,11 +17,6 @@ function App() {
         <Skills />
 
         <Projects />
-
-        <InfoSection {...futFriendsObj} />
-        <InfoSection {...proTaskObj} />
-        <InfoSection {...triviappObj} />
-        <InfoSection {...netflixObj} />
 
         <About />
 
