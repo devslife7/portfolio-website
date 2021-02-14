@@ -16,7 +16,7 @@ export default function Home() {
         <div className="home__text-1">Hello, my name is</div>
         <div className="home__text-2">Marcos Velasco</div>
         <div className="home__text-3">
-          Full Stack Software
+          I'm a Full Stack Software
             <span className="home__span">
               <Typewriter
                 options={{
