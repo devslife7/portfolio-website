@@ -3,7 +3,6 @@ import { FaBars } from "react-icons/fa"
 import './Navbar.css'
 import { animateScroll as scroll } from "react-scroll"
 import { Link } from "react-scroll"
-// import { MobileIcon, NavItem, NavLinks, NavLogo, NavMenu } from "./NavbarElements"
 
 export default function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false)
@@ -37,7 +36,7 @@ export default function Navbar({ toggle }) {
           </div>
           <ul className="nav__menu">
             <div className="nav__item">
-              <Link className="nav__link" to='Home' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='home' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Home
               </Link>
             </div>

@@ -8,7 +8,8 @@ import {
   HeroH1,
   HeroP,
   LinkBtn,
-} from "./HeroElements"
+} from "./HomeElements"
+import './Home.css'
 
 export default function HeroSection() {
   const [hover, setHover] = useState(false)
@@ -18,14 +19,14 @@ export default function HeroSection() {
   }
 
   return (
-    <HeroContainer id='Home' style={{ fontFamily: 'Ubuntu, sans-serif'}}>
+    <HeroContainer className="home">
       <HeroContent>
         <HeroP>Hello, my name is</HeroP>
         <HeroH1>Marcos Velasco</HeroH1>
         <HeroP>And I'm a Full Stack Software Developer</HeroP>
         <HeroBtnWrapper>
           <LinkBtn
-            to='futfriends'
+            to='projects'
             smooth='true'
             duration={500}
             spy={true}
