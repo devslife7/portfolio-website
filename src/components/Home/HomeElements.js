@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md"
 import { Link as LinkS } from "react-scroll"
-import background from "../../images/background1.jpg"
+// import background from "../../images/background1.jpg"
 
 // export const HeroContainer = styled.div`
 //   background: url(${background});

@@ -27,7 +27,7 @@
   color: #FFF;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  font-weight: 500;
 }
 
 .home__text-1 {
@@ -43,9 +43,15 @@
 .home__text-3 {
   font-size: 40px;
   margin: 5px 0;
+  display: flex;
+}
+
+.home__span {
+  margin-left: 8px;
+  color: var(--color-primary);
 }
 
 .home__btnWrapper {
-  margin-top: 32px;
+  margin-top: 20px;
   display: flex;
 }
