@@ -11,7 +11,7 @@ import {
 } from "./HomeElements"
 import './Home.css'
 
-export default function HeroSection() {
+export default function Home() {
   const [hover, setHover] = useState(false)
 
   const onHover = () => {
@@ -19,11 +19,11 @@ export default function HeroSection() {
   }
 
   return (
-    <HeroContainer className="home">
-      <HeroContent>
-        <HeroP>Hello, my name is</HeroP>
-        <HeroH1>Marcos Velasco</HeroH1>
-        <HeroP>And I'm a Full Stack Software Developer</HeroP>
+    <div className="home">
+      <div className="home__content">
+        <div className="home__text-1">Hello, my name is</div>
+        <div className="home__text-2">Marcos Velasco</div>
+        <div className="home__text-3">And I'm a Full Stack Software Developer</div>
         <HeroBtnWrapper>
           <LinkBtn
             to='projects'
@@ -38,7 +38,7 @@ export default function HeroSection() {
             Projects {hover ? <ArrowForward /> : <ArrowRight />}
           </LinkBtn>
         </HeroBtnWrapper>
-      </HeroContent>
-    </HeroContainer>
+      </div>
+    </div>
   )
 }

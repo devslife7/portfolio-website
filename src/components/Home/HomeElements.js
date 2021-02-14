@@ -3,30 +3,29 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md"
 import { Link as LinkS } from "react-scroll"
 import background from "../../images/background1.jpg"
 
-export const HeroContainer = styled.div`
-  /* background: #0c0c0c; */
-  background: url(${background});
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  /* height: 800px; */
-  height: 100vh;
-  position: relative;
-  z-index: 1;
+// export const HeroContainer = styled.div`
+//   background: url(${background});
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0 30px;
+//   height: 100vh;
+//   position: relative;
+//   z-index: 1;
 
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-    z-index: 2;
-  }
-`
+//   :before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%),
+//       linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+//     z-index: 2;
+//   }
+// `
+
 export const HeroBg = styled.div`
   position: absolute;
   top: 0;
@@ -46,15 +45,15 @@ export const VideoBg = styled.video`
   background: #232a34;
 `
 
-export const HeroContent = styled.div`
-  z-index: 3;
-  max-width: 12000px;
-  position: absolute;
-  padding: 8px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
+// export const HeroContent = styled.div`
+//   z-index: 3;
+//   max-width: 12000px;
+//   position: absolute;
+//   padding: 8px 24px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `
 
 export const HeroH1 = styled.h1`
   color: #fff;
