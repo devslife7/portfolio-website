@@ -20,11 +20,11 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div className="home__content">
+      <div className="home__content container">
         <div className="home__text-1">Hello, my name is</div>
         <div className="home__text-2">Marcos Velasco</div>
         <div className="home__text-3">And I'm a Full Stack Software Developer</div>
-        <HeroBtnWrapper>
+        <div className="home__btnWrapper">
           <LinkBtn
             to='projects'
             smooth='true'
@@ -37,7 +37,7 @@ export default function Home() {
           >
             Projects {hover ? <ArrowForward /> : <ArrowRight />}
           </LinkBtn>
-        </HeroBtnWrapper>
+        </div>
       </div>
     </div>
   )

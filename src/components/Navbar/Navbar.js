@@ -26,7 +26,7 @@ export default function Navbar({ toggle }) {
   return (
     <>
       <div className={`nav ${scrollNav && "nav--background"}`}>
-        <div className="nav__container">
+        <div className="nav__content container">
           
           <div className="nav__logo" onClick={toggleHome}>
             Portfo<span className="nav__logoColor">lio</span>
@@ -36,27 +36,27 @@ export default function Navbar({ toggle }) {
           </div>
           <ul className="nav__menu">
             <div className="nav__item">
-              <Link className="nav__link" to='home' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='home' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
                 Home
               </Link>
             </div>
             <div className="nav__item">
-              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
                 Skills
               </Link>
             </div>
             <div className="nav__item">
-              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
                 Projects
               </Link>
             </div>
             <div className="nav__item">
-              <Link className="nav__link" to='about' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='about' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
                 About
               </Link>
             </div>
             <div className="nav__item">
-              <Link className="nav__link" to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
                 Contact
               </Link>
             </div>
