@@ -45,6 +45,10 @@
   font-weight: 600;
 }
 
+.nav__logoColor {
+  color: var(--color-primary);
+}
+
 .nav__mobileIcon {
   display: none;
 }
@@ -98,6 +102,6 @@
   color: var(--color-primary);
 }
 .nav__link.active {
-  border-bottom: 3px solid var(--color-primary);
-  color: var(--color-primary);
+  border-bottom: 5px solid var(--color-primary);
+  /* color: var(--color-primary); */
 }

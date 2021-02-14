@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa"
 import './Navbar.css'
 import { animateScroll as scroll } from "react-scroll"
 import { Link } from "react-scroll"
-import { MobileIcon, NavItem, NavLinks, NavLogo, NavMenu } from "./NavbarElements"
+// import { MobileIcon, NavItem, NavLinks, NavLogo, NavMenu } from "./NavbarElements"
 
 export default function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false)
@@ -30,7 +30,7 @@ export default function Navbar({ toggle }) {
         <div className="nav__container">
           
           <div className="nav__logo" onClick={toggleHome}>
-            Portfo<span style={{ color: 'red'}}>lio</span>
+            Portfo<span className="nav__logoColor">lio</span>
           </div>
           <div className="nav__mobileIcon" onClick={toggle}>
             <FaBars />
@@ -47,19 +47,19 @@ export default function Navbar({ toggle }) {
               </Link>
             </div>
             <div className="nav__item">
-              <NavLinks to='futfriends' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='futfriends' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Projects
-              </NavLinks>
+              </Link>
             </div>
             <div className="nav__item">
-              <NavLinks to='about' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='about' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 About
-              </NavLinks>
+              </Link>
             </div>
             <div className="nav__item">
-              <NavLinks to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+              <Link className="nav__link" to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Contact
-              </NavLinks>
+              </Link>
             </div>
           </ul>
         </div>
