@@ -1,7 +1,23 @@
 .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   text-align: center;
+}
+
+.skills__header {
+  margin-top: 50px;
+}
+
+.skills__section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .skills__item {
   width: 50px;
+  border-radius: 4px;
 }
