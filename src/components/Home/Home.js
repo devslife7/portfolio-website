@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import { ArrowForward, ArrowRight, LinkBtn } from "./HomeElements"
 import './Home.css'
 import Typewriter from "typewriter-effect"
+import { Link } from "react-scroll"
 
 export default function Home() {
   const [hover, setHover] = useState(false)
@@ -29,7 +29,8 @@ export default function Home() {
         </div>
 
         <div className="home__btnWrapper">
-          <LinkBtn
+          <Link
+            className="home__btn"
             to='projects'
             smooth='true'
             duration={500}
@@ -39,8 +40,8 @@ export default function Home() {
             onMouseLeave={onHover}
             primary='true'
           >
-            Projects {hover ? <ArrowForward /> : <ArrowRight />}
-          </LinkBtn>
+            My Projects
+          </Link>
         </div>
       </div>
     </div>

@@ -59,3 +59,20 @@
   margin-top: 20px;
   display: flex;
 }
+
+.home__btn {
+  background: var(--color-primary);
+  font-size: 24px;
+  padding: 10px 32px;
+  margin-top: 10px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.home__btn:hover {
+  color: var(--color-primary);
+  background: none;
+  cursor: pointer;
+}

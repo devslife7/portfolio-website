@@ -21,9 +21,10 @@ code {
 }
 
 :root {
-  /* --color-primary: rgb(28, 161, 242); */
-  --color-primary: #01bf71;
+  /* --color-primary: #2070df; */
+  --color-primary: #ff8e00;
   /* --color-primary: #dc133d; */
+  /* --color-primary: #01bf71; */
 
   --color-secondary: #dc133d;
 }
