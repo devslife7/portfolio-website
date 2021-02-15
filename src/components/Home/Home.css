@@ -1,6 +1,6 @@
 .home {
   font-family: 'Ubuntu', sans-serif;
-  background: url("../../images/background2.jpg") no-repeat center;
+  background: url("../../images/background3-cropped(3).jpg") no-repeat center;
   background-size: cover; /* covers the whole screen */
   background-attachment: fixed; /* fixes its position */
 
@@ -16,9 +16,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.9) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
   z-index: 2;
+  
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.9) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%); */
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.8) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
 }
 
 .home__content {
