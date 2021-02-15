@@ -1,5 +1,5 @@
 import React from "react"
-import SkillsCard from "./components/SkillsCard"
+import SkillsCard from "./SkillsCard"
 import { frontEnd, backEnd, other } from "./Data"
 import './Skills.css'
 
