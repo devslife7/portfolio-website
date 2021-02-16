@@ -1,7 +1,7 @@
 .nav {
   position: fixed;
   width: 100%;
-  z-index: 999; /* in front of anything */
+  z-index: 800; /* in front of anything but before movile Sidebar */
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }

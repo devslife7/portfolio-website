@@ -13,13 +13,10 @@ export default function Projects({
   technologies,
   hosting
 }) {
-  
-  let tags = ['one', 'two', 'three']
 
   const renderTags = (tags = []) => {
     return tags.map( (tag, idx) =>  <Tag key={idx}>{tag}</Tag>)
   }
-
 
   return (
     <>
@@ -28,7 +25,7 @@ export default function Projects({
             <div >
               <p className="project__name">{name}</p>
 
-              <p className="project__subtitle" darkTheme={darkTheme}>{description}</p>
+              <p className="project__subtitle">{description}</p>
               <div className="project__title">Technologies:</div>
               <div className="project__technologies">{renderTags(technologies)}</div>
               <div className="project__title">Hosted via:</div>
