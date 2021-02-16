@@ -22,7 +22,7 @@ export default function Projects({
     <>
       <div className={`${darkTheme && 'darkBackground'}`}>
         <div className={`project__wrapper container ${flipped && 'flipped'}`}>
-            <div >
+            <div className="project__info">
               <p className="project__name">{name}</p>
 
               <p className="project__subtitle">{description}</p>
@@ -34,7 +34,9 @@ export default function Projects({
               <Button href={projectLink}> Live Demo </Button>
             </div >
               
-            {/* <img className="project__img" src={img} alt={`${name} preview`} /> */}
+            <div>
+              <img className="project__img" src={img} alt={`${name} preview`} />
+            </div>
         </div >
         </div>
     </>
