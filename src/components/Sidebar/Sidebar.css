@@ -1,4 +1,5 @@
 .sidebar {
+  font-family: 'Ubuntu', sans-serif;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -9,6 +10,48 @@
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100% ")}; */
+}
+
+.sidebar__closed {
+  top: -100%;
+  opacity: 0;
+}
+
+.sidebar__icon {
+  color: #fff;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.8rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+
+.sidebar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar__link:hover {
+  color: var(--color_primary);
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar__span {
+  color: var(--color-primary);
 }

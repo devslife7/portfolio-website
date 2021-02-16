@@ -2,9 +2,9 @@
   font-family: 'Ubuntu', sans-serif;
   background: url("../../images/background3-cropped(3).jpg") no-repeat center;
   /* covers the whole screen */
-  /* background-size: cover;  */
+  background-size: cover; 
   /* fixes its position */
-  /* background-attachment: fixed;  */
+  background-attachment: fixed; 
 
   display: flex;
   height: 100vh;
@@ -34,7 +34,6 @@
   display: flex;
   flex-direction: column;
   font-weight: 500;
-  background-color: red;
 }
 
 .home__text-1 {
@@ -44,15 +43,13 @@
 .home__text-2 {
   font-size: 75px;
   font-weight: 600;
-  margin-left: -3px;
-  background-color: yellow;
+  margin-left: -4px;
 }
 
 .home__text-3 {
   font-size: 40px;
   margin: 5px 0;
   display: flex;
-  background-color: green;
 }
 
 .home__span {
@@ -67,7 +64,6 @@
 .home__btnWrapper {
   margin-top: 20px;
   display: flex;
-  background-color: lightblue;
 }
 
 .home__btn {
@@ -85,4 +81,40 @@
   color: var(--color-primary);
   background: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .home__text-1 {
+    font-size: 27px;
+  }
+  
+  .home__text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -4px;
+  }
+  
+  .home__text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+    display: flex;
+  }
+}
+
+@media (max-width: 480px){
+  .home__text-1 {
+    font-size: 27px;
+  }
+  
+  .home__text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -4px;
+  }
+  
+  .home__text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+    display: flex;
+  }
 }

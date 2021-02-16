@@ -34,7 +34,7 @@ export default function Projects({
               <Button href={projectLink}> Live Demo </Button>
             </div >
               
-            <img className="project__img" src={img} alt={`${name} preview`} />
+            {/* <img className="project__img" src={img} alt={`${name} preview`} /> */}
         </div >
         </div>
     </>
