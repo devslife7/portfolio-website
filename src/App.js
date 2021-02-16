@@ -22,7 +22,7 @@ function App() {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <Home />
-        {/* <Skills /> */}
+        <Skills />
         <Projects />
         <About />
         <Contact />
