@@ -36,27 +36,27 @@ export default function Navbar({ toggle }) {
           </div>
           <ul className="nav__menu">
             <li className="nav__item">
-              <Link className="nav__link" to='home' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
+              <Link className="nav__link" to='home' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Home
               </Link>
             </li>
             <li className="nav__item">
-              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
+              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Skills
               </Link>
             </li>
             <li className="nav__item">
-              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
+              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Projects
               </Link>
             </li>
             <li className="nav__item">
-              <Link className="nav__link" to='about' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
+              <Link className="nav__link" to='about' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 About
               </Link>
             </li>
             <li className="nav__item">
-              <Link className="nav__link" to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-90}>
+              <Link className="nav__link" to='contact' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
                 Contact
               </Link>
             </li>

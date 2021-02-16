@@ -41,6 +41,7 @@ export default function Home() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
+            offset={-80}
           >
             My Projects
           </Link>
