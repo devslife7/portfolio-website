@@ -16,15 +16,17 @@ export default function Home() {
         <div className="home__text-1">Hello<span className="home__span">,</span> my name is</div>
         <div className="home__text-2">Marcos Velasco</div>
         <div className="home__text-3">
-          I'm a Full Stack Software
+          <p>
+            I'm a Full Stack Software
+          </p>
           <span className='home__spanTypewriter'>
-            {/* <Typewriter
+            <Typewriter
               options={{
                 strings: ["Developer", "Engineer"],
                 autoStart: true,
                 loop:true
               }} 
-            /> */}
+            />
           </span>
         </div>
 

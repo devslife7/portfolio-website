@@ -38,18 +38,20 @@
 
 .home__text-1 {
   font-size: 27px;
+  margin-bottom: 10px;
 }
 
 .home__text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -4px;
+  margin-bottom: 20px;
 }
 
 .home__text-3 {
-  font-size: 40px;
-  margin: 5px 0;
   display: flex;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .home__span {
@@ -85,36 +87,45 @@
 
 @media (max-width: 768px) {
   .home__text-1 {
-    font-size: 27px;
+    font-size: 24px;
   }
   
   .home__text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -4px;
+    font-size: 60px;
   }
   
   .home__text-3 {
-    font-size: 40px;
+    font-size: 35px;
     margin: 5px 0;
-    display: flex;
+
+    max-width: 250px;
+    flex-direction: column;
+  }
+  
+  .home__spanTypewriter {
+    margin-left: 0px;
   }
 }
 
 @media (max-width: 480px){
   .home__text-1 {
-    font-size: 27px;
+    font-size: 20px;
   }
   
   .home__text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -4px;
+    font-size: 55px;
   }
   
   .home__text-3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px 0;
-    display: flex;
   }
+
+  .home__btn {
+    font-size: 20px;
+    padding: 8px 28px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
 }

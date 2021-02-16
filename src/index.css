@@ -30,8 +30,19 @@ code {
 }
 
 .container {
-  /* background-color: red; */
   max-width: 1300px;
-  padding: 0 40px;
+  padding: 0 50px;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 30px;
+  }
 }
