@@ -1,47 +1,55 @@
 export const futFriendsObj = {
-  id: "futfriends",
+  name: "FutFriends",
   darkTheme: true,
   flipped: false,
   img: require("../../images/futFriends.png"),
 
   topLine: "React, Redux, Material UI",
-  headline: "FutFriends",
-  description: "Look up popular upcoming matches and create watchparty with your friends",
-  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png"
+  description: "Look up popular upcoming matches and create watchparties with your friends.",
+  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png",
+
+  technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
+  hosting: ['AWS']
 }
 
 export const proTaskObj = {
-  id: "protaskr",
+  name: "proTaskr",
   darkTheme: false,
   flipped: true,
   img: require("../../images/protask.png"),
 
   topLine: "React, Redux, Material UI",
-  headline: "proTaskr",
-  description: "Helps your teams to organize, track, and manage their work",
-  projectLink: "https://production-branch.d18y87fht79wtx.amplifyapp.com/"
+  description: "Helps your teams to organize, track, and manage their work.",
+  projectLink: "https://production-branch.d18y87fht79wtx.amplifyapp.com/",
+
+  technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
+  hosting: ['Heroku', 'AWS']
 }
 
 export const triviappObj = {
-  id: "triviapp",
+  name: "TriviApp",
   darkTheme: true,
   flipped: false,
   img: require("../../images/triviapp.png"),
 
   topLine: "React, Redux, Material UI",
-  headline: "Triviapp",
-  description: "Play a game of Trivia solo or with your friends",
-  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png"
+  description: "Play a game of Trivia solo or with your friends.",
+  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png",
+
+  technologies: ['React', 'Ruby on Rails', 'Postgresql', 'Material UI'],
+  hosting: ['Heroku']
 }
 
 export const netflixObj = {
-  id: "netflix",
+  name: "Netflix Clone",
   darkTheme: false,
   flipped: true,
   img: require("../../images/netflix-clone.png"),
 
   topLine: "React, Material UI",
-  headline: "Netflix Clone",
-  description: "Browse the entire Netflix Library",
-  projectLink: "https://netflix-clone-9e2cc.web.app/"
+  description: "Browse the Netflix Library.",
+  projectLink: "https://netflix-clone-9e2cc.web.app/",
+
+  technologies: ['React', 'CSS', 'Movie API'],
+  hosting: ['Firebase']
 }

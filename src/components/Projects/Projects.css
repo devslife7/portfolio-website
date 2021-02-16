@@ -1,0 +1,75 @@
+.projects {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* --- Styles for each individual Project --- */
+
+.darkBackground {
+  background-color: #000;
+  color: #fff;
+}
+
+.project__wrapper {
+  height: 700px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.flipped {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .flipped {
+    flex-direction: column;
+  }
+  .project__wrapper {
+    flex-direction: column;
+  }
+}
+
+.project__name {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+}
+
+.project__subtitle {
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.project__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.project__tag {
+  background-color: gray;
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 5px;
+
+  margin-right: 10px;
+
+}
+
+.project__img {
+  max-width: 555px;
+  border: solid 2px var(--color-primary);
+  border-radius: 7px;
+}

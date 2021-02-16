@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home__content container">
-        <div className="home__text-1">Hello, my name is</div>
+        <div className="home__text-1">Hello<span className="home__span">,</span> my name is</div>
         <div className="home__text-2">Marcos Velasco</div>
         <div className="home__text-3">
           I'm a Full Stack Software
-            <span className="home__span">
+            <span className="home__spanTypewriter">
               <Typewriter
                 options={{
                   strings: ["Developer", "Engineer", "Designer", "Creator"],
