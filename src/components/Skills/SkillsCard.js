@@ -1,11 +1,11 @@
 import React from 'react'
+import Paper from '@material-ui/core/Paper'
 
 export default function SkillsCard({ name, imgLink }) {
   return (
-    <div>
-      <h3>{name}</h3>
-      <img className="skills__item" src={imgLink} alt={`${name} logo`} />
-
-    </div>
+    <Paper className="skill__card" elevation={2} style={{borderRadius: '10px'}}>
+      <img className="skill__item" src={imgLink} alt={`${name} logo`} />
+      <div className="skill__title">{name}</div>
+    </Paper>
   )
 }

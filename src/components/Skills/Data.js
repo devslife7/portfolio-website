@@ -1,5 +1,13 @@
 export const frontEnd = [
   {
+    name: "HTML",
+    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+  },
+  {
+    name: "CSS",
+    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
+  },
+  {
     name: "Javascript (ES6)",
     imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
   },
@@ -11,18 +19,10 @@ export const frontEnd = [
     name: "Redux",
     imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
   },
-  {
-    name: "Thunk",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
-  },
-  {
-    name: "HTML",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-  },
-  {
-    name: "CSS",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-  },
+  // {
+  //   name: "Thunk",
+  //   imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
+  // },
   {
     name: "Material UI",
     imgLink: "https://avatars.githubusercontent.com/u/33663932?s=200&v=4"
@@ -53,10 +53,6 @@ export const backEnd = [
 
 export const other = [
   {
-    name: "Heroku",
-    imgLink: "https://avatars.githubusercontent.com/u/23211?s=200&v=4"
-  },
-  {
     name: "Git",
     imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
   },
@@ -67,6 +63,10 @@ export const other = [
   {
     name: "JSON",
     imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png"
+  },
+  {
+    name: "Heroku",
+    imgLink: "https://avatars.githubusercontent.com/u/23211?s=200&v=4"
   },
   {
     name: "Amazon Web Services",

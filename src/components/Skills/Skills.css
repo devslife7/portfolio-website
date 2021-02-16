@@ -1,5 +1,10 @@
 .skills {
   font-family: 'Ubuntu', sans-serif;
+  background-color: #f7f7f7;
+  transition: all 0.5s ease;
+}
+
+.skills__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,17 +13,44 @@
 }
 
 .skills__header {
-  margin-top: 50px;
+  margin-top: 30px;
+  font-size: 20px;
 }
+
 
 .skills__section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
-  margin-top: 40px;
+  margin: 40px;
 }
 
-.skills__item {
-  width: 50px;
+/* --- Skill Card Styles --- */
+
+.skill__card {
+  /* background-color: red; */
+  padding: 5px;
+  width: 130px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skill__card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s all ease;
+}
+
+.skill__item {
+  width: 4rem;
   border-radius: 4px;
+}
+
+.skill__title {
+  font-size: 18px;
+  font-weight: 400;
 }

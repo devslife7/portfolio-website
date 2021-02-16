@@ -21,9 +21,7 @@ export default function Projects({
   topLine,
   headline,
   description,
-  buttonLabel,
   img,
-  alt,
   darkTheme,
   flipped,
   projectLink
@@ -50,7 +48,7 @@ export default function Projects({
                     primary={darkTheme ? 1 : 0}
                     dark={darkTheme ? 1 : 0}
                   >
-                    {buttonLabel}
+                    Live Demo
                   </Button>
                 </BtnWrap>
               </TextWrapper>
@@ -58,7 +56,7 @@ export default function Projects({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={img} alt={`${id} preview`} />
               </ImgWrap>
             </Column2>
           </InfoRow>

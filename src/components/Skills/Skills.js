@@ -13,25 +13,28 @@ export default function Skills() {
 
   return (
     <div className="skills">
-      <h2 className="skills__header">Technical Skills</h2>
+      <div className="skills__content container">
+        <div className="skills__header">Technical Skills</div>
 
 
-      <h2 className="skills__header">Front End</h2>
-      <div className="skills__section">
-        { renderSkills(frontEnd) }
-      </div>
+        <div className="skills__header">Front End</div>
+        <div className="skills__section">
+          { renderSkills(frontEnd) }
+        </div>
 
 
-      <h2 className="skills__header">Back End</h2>  
+        <div className="skills__header">Back End</div>  
 
-      <div className="skills__section">
-        { renderSkills(backEnd) }
-      </div>
+        <div className="skills__section">
+          { renderSkills(backEnd) }
+        </div>
 
-      <h2 className="skills__header">Other</h2>
+        <div className="skills__header">Other</div>
 
-      <div className="skills__section">
-        { renderSkills(other) }
+        <div className="skills__section">
+          { renderSkills(other) }
+        </div>
+
       </div>
 
     </div>

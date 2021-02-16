@@ -86,7 +86,7 @@
   font-size: 19px;
   font-weight: 500;
 
-  transition: 0.2s all ease;
+  transition: all 0.2s ease;
 }
 
 .nav__link:hover {
