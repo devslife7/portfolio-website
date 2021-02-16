@@ -17,16 +17,14 @@ export default function Home() {
         <div className="home__text-2">Marcos Velasco</div>
         <div className="home__text-3">
           I'm a Full Stack Software
-            <span className="home__spanTypewriter">
-              <Typewriter
+        </div>
+        <Typewriter
                 options={{
-                  strings: ["Developer", "Engineer", "Designer", "Creator"],
+                  strings: ["Developer", "Engineer"],
                   autoStart: true,
                   loop:true
                 }} 
               />
-            </span>
-        </div>
 
         <div className="home__btnWrapper">
           <Link

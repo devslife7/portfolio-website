@@ -1,8 +1,10 @@
 .home {
   font-family: 'Ubuntu', sans-serif;
   background: url("../../images/background3-cropped(3).jpg") no-repeat center;
-  background-size: cover; /* covers the whole screen */
-  background-attachment: fixed; /* fixes its position */
+  /* covers the whole screen */
+  /* background-size: cover;  */
+  /* fixes its position */
+  /* background-attachment: fixed;  */
 
   display: flex;
   height: 100vh;
@@ -32,6 +34,7 @@
   display: flex;
   flex-direction: column;
   font-weight: 500;
+  background-color: red;
 }
 
 .home__text-1 {
@@ -42,12 +45,14 @@
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
+  background-color: yellow;
 }
 
 .home__text-3 {
   font-size: 40px;
   margin: 5px 0;
   display: flex;
+  background-color: green;
 }
 
 .home__span {
@@ -62,6 +67,7 @@
 .home__btnWrapper {
   margin-top: 20px;
   display: flex;
+  background-color: lightblue;
 }
 
 .home__btn {
