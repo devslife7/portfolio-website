@@ -1,0 +1,25 @@
+.btn {
+  font-family: 'Ubuntu', sans-serif;
+
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 18px;
+  /* margin-top: 20px; */
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+  background: none;
+}
+
+.btn:active {
+  outline: none;
+}

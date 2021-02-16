@@ -1,6 +1,6 @@
 import React from "react"
-import { Button } from "../ButtonElements"
-// import {Button as ButtonUI} from "@material-ui/core"
+// import { Button } from "../ButtonElements"
+import Button from "../Button"
 import {
   BtnWrap,
   Column1,
@@ -38,21 +38,11 @@ export default function Projects({
 
                 <Subtitle darkTheme={darkTheme}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={darkTheme ? 1 : 0}
-                    dark={darkTheme ? 1 : 0}
-                  >
+                  <Button href={projectLink}>
                     Live Demo
                   </Button>
                 </BtnWrap>
               </TextWrapper>
-              <a href={projectLink} target='#' arial-label='project link'>Live Demo</a>
             </Column1>
             <Column2>
               <ImgWrap>
