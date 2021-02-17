@@ -14,6 +14,7 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="skills__content container">
+
         <h2 className="skills__title">My Ski<span className='skills__span'>ll</span>s</h2>
 
 
@@ -36,7 +37,6 @@ export default function Skills() {
         </div>
 
       </div>
-
     </div>
   )
 }

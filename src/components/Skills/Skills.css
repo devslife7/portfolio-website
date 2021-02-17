@@ -9,7 +9,16 @@
   /* fixes its position */
   background-attachment: fixed; 
 
-  padding: 100px 0px;
+  position: relative;
+  z-index: 1;
+}
+.skills::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
 }
 
 .skills__span {
@@ -17,27 +26,31 @@
 }
 
 .skills__content {
+  z-index: 10;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   
   max-width: 1000px;
+  color: #fff
 }
 
 .skills__title {
-  color: #fff;
+  z-index: inherit;
   font-size: 40px;
   font-weight: 500;
   margin: 0px auto 60px auto;
 }
 
 .skills__header {
-  color: #fff;
+  z-index: inherit;
   font-size: 22px;
   font-weight: 500;
 }
 
 .skills__section {
+  z-index: inherit;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
