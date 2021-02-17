@@ -18,7 +18,8 @@
 }
 
 .contact__columnLeft {
-  width: 100%
+  width: 100%;
+  margin-right: 70px;
 }
 
 .contact__columnRight {
@@ -58,48 +59,69 @@
 
 .contact__fields {
   display: flex;
+  justify-content: center;
 }
 
-/* .contact__field {
-  height: 45px;
-  width: 100%;
-  margin-bottom: 15px;
-} */
-/* 
-.contact__field input {
-  height: 45px;
-  width: 100%;
-  margin-bottom: 15px;
-} */
-
-.contact__fieldName input {
+.contact__input {
   height: 100%;
   width: 100%;
-  
   border: 1px solid lightgray;
   outline: none;
-  padding: 0 15px;
+  padding: 10px 15px;
   border-radius: 7px;
+  resize: none;
 
   font-size: 17px;
   transition: all 0.3s ease;
   
-  
   margin-bottom: 15px;
 }
 
-.contact__fieldEmail input {
+.contact__fieldName {
+  height: 50px;
   width: 100%;
+  margin-right: 20px;
+  margin-bottom: 15px;
 }
 
-.contact__fieldSubject input {
-  height: 45px;
+.contact__fieldEmail{
+  height: 50px;
   width: 100%;
   margin-bottom: 15px;
 }
 
-.contact__fieldTextarea textarea{
+.contact__fieldSubject{
+  height: 50px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact__fieldTextarea{
   height: 80px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.contact__button {
+  height: 47px;
+  width: 170px;
+}
+
+.contact__button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact__button button:hover {
+  color: var(--color-primary);
+  background: none;
 }

@@ -53,18 +53,18 @@ export default function Contact() {
           <form action="#">
             <div className="contact__fields">
               <div className="contact__fieldName">
-                <input type="text" placeholder="Name" required />
+                <input className='contact__input' type="text" placeholder="Name" required />
               </div>
               <div className="contact__fieldEmail">
-                <input type="email" placeholder="Email" required />
+                <input className='contact__input' type="email" placeholder="Email" required />
               </div>
             </div>
                         
             <div className="contact__fieldSubject">
-              <input type="text" placeholder="Subject" required />
+              <input className='contact__input' type="text" placeholder="Subject" required />
             </div>
             <div className="contact__fieldTextarea">
-              <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+              <textarea className='contact__input' cols="30" rows="10" placeholder="Message.." required></textarea>
             </div>
             <div className="contact__button">
               <button type="submit">Send message</button>
