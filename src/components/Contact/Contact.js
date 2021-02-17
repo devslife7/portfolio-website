@@ -64,7 +64,7 @@ export default function Contact() {
               <input className='contact__input' type="text" placeholder="Subject" required />
             </div>
             <div className="contact__fieldTextarea">
-              <textarea className='contact__input' cols="30" rows="10" placeholder="Message.." required></textarea>
+              <textarea className='contact__input' cols="30" rows="10" placeholder="Message..." required></textarea>
             </div>
             <div className="contact__button">
               <button type="submit">Send message</button>
