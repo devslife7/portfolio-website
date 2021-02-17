@@ -30,6 +30,7 @@ export default function Navbar({ toggle }) {
           
           <div className="nav__logo" onClick={toggleHome}>
             Portfo<span className="nav__logoColor">lio</span>
+            {/* Marc<span className="nav__logoColor">os</span> Velasco */}
           </div>
           <div className="nav__mobileIcon" onClick={toggle}>
             <FaBars />
