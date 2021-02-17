@@ -1,7 +1,46 @@
 .contact {
-  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 700px;
+  padding: 100px 0px
 }
 
-.contact .contact__typography {
-  margin: 2rem 0;
+.contact__content {
+  background-color: red;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.contact__columnLeft {
+  background-color: yellow;
+  width: 100%
+}
+
+.contact__columnRight {
+  background-color: green;
+  width: 100%;
+}
+
+.contact__title2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact__infoRow {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact__icon {
+  font-size: 25px;
+  color: var(--color-primary);
 }
