@@ -78,29 +78,21 @@
   margin-bottom: 15px;
 }
 
+.contact__fieldName,
+.contact__fieldEmail,
+.contact__fieldSubject,
+.contact__fieldTextarea {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .contact__fieldName {
-  height: 50px;
-  width: 100%;
   margin-right: 20px;
-  margin-bottom: 15px;
-}
-
-.contact__fieldEmail{
-  height: 50px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.contact__fieldSubject{
-  height: 50px;
-  width: 100%;
-  margin-bottom: 15px;
 }
 
 .contact__fieldTextarea{
   height: 80px;
-  width: 100%;
-  margin-bottom: 15px;
 }
 
 .contact__loadingLogo {
@@ -124,11 +116,23 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__button button:hover {
   color: var(--color-primary);
   background: none;
+}
+
+.contact__fieldTextarea textarea,
+.contact__fieldSubject input,
+.contact__fieldEmail input,
+.contact__fieldName input
+{
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 768px) {

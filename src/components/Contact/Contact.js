@@ -10,7 +10,18 @@ import CircularProgress from '@material-ui/core/CircularProgress'
 
 export default function Contact() {
   const [snackOpen, setSnackOpen] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+  const clearForm = () => {
+    setName('')
+    setEmail('')
+    setSubject('')
+    setMessage('')
+  }
 
   const handleSnackClose = () => {
     setSnackOpen(false)
@@ -18,18 +29,22 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setIsLoading(true)
 
-    // emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K')
-    //   .then((resp) => {
-    //     if (resp.status === 200) {
-    //       setSnackOpen(true)
-    //     }
-    //   }, (error) => {
-    //     console.log(error.text)
-    //   })
-    //   e.target.reset()
+    emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K')
+      .then((resp) => {
+        if (resp.status === 200) {
+          setSnackOpen(true)
+          setIsLoading(false)
+          clearForm()
+        }
+        // e.target.reset()
+      }, (error) => {
+        console.log(error.text)
+      })
+      // e.target.reset()
 
-      setSnackOpen(true)
+      // setSnackOpen(true)
   }
 
   return (
@@ -93,23 +108,26 @@ export default function Contact() {
           <form onSubmit={sendEmail}>
             <div className="contact__fields">
               <div className="contact__fieldName">
-                <input className='contact__input' type="text" placeholder="Name" required name='name'/>
+                <input className='contact__input' value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Name" required name='name'/>
               </div>
               <div className="contact__fieldEmail">
-                <input className='contact__input' type="email" placeholder="Email" required name='email'/>
+                <input className='contact__input' value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Email" required name='email'/>
               </div>
             </div>
                         
             <div className="contact__fieldSubject">
-              <input className='contact__input' type="text" placeholder="Subject" required name='subject'/>
+              <input className='contact__input' value={subject} onChange={e => setSubject(e.target.value)} type="text" placeholder="Subject" required name='subject'/>
             </div>
             <div className="contact__fieldTextarea">
-              <textarea className='contact__input' cols="30" rows="10" placeholder="Message..." required name='message'></textarea>
+              <textarea className='contact__input' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder="Message..." required name='message'></textarea>
             </div>
             <div className="contact__button">
               <button type="submit">
-                {/* Send message */}
-                <CircularProgress style={{color: '#fff', width: '30px', height: '30px', padding: 'auto'}} />
+
+                { isLoading
+                ? <CircularProgress style={{ width: '30px', height: '30px', color: 'inherit' }}/>
+                : 'Send Message'}
+
               </button>
             </div>
           </form>
