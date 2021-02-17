@@ -16,15 +16,14 @@ export default function Contact() {
           <div className='contact__title2'>
             Get in Touch
           </div>
-          <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?
+          <p className='contact__text'>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?
           </p>
 
           <div className='contact__infoRow'>
             <PersonIcon fontSize='large' className='contact__icon'/>
             <div className='contanct__infoDetails'>
-              <h4>Name</h4>
+              <h4 className='contact__infoDetailsTitle'>Name</h4>
               <p>Marcos Velasco</p>
             </div>
           </div>
@@ -32,7 +31,7 @@ export default function Contact() {
           <div className='contact__infoRow'>
             <LocationOnIcon fontSize='large' className='contact__icon'/>
             <div className='contanct__infoDetails'>
-              <h4>Location</h4>
+              <h4 className='contact__infoDetailsTitle'>Location</h4>
               <p>Alexandria, VA</p>
             </div>
           </div>
@@ -40,7 +39,7 @@ export default function Contact() {
           <div className='contact__infoRow'>
             <EmailIcon fontSize='large' className='contact__icon'/>
             <div className='contanct__infoDetails'>
-              <h4>Email</h4>
+              <h4 className='contact__infoDetailsTitle'>Email</h4>
               <p>devslife7@gmail.com</p>
             </div>
           </div>
@@ -52,22 +51,22 @@ export default function Contact() {
           </div>
           
           <form action="#">
-            <div class="fields">
-              <div class="field name">
+            <div className="contact__fields">
+              <div className="contact__fieldName">
                 <input type="text" placeholder="Name" required />
               </div>
-              <div class="field email">
+              <div className="contact__fieldEmail">
                 <input type="email" placeholder="Email" required />
               </div>
             </div>
                         
-            <div class="field">
+            <div className="contact__fieldSubject">
               <input type="text" placeholder="Subject" required />
             </div>
-            <div class="field textarea">
+            <div className="contact__fieldTextarea">
               <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
             </div>
-            <div class="button">
+            <div className="contact__button">
               <button type="submit">Send message</button>
             </div>
           </form>
