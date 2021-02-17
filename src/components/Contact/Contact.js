@@ -1,10 +1,37 @@
-import React from "react"
+import React, { useState } from "react"
 import './Contact.css'
 import PersonIcon from '@material-ui/icons/Person';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
+import MuiAlert from '@material-ui/lab/Alert';
+import emailjs from 'emailjs-com';
+import Snackbar from '@material-ui/core/Snackbar';
+import CircularProgress from '@material-ui/core/CircularProgress'
 
 export default function Contact() {
+  const [snackOpen, setSnackOpen] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const handleSnackClose = () => {
+    setSnackOpen(false)
+  }
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    // emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K')
+    //   .then((resp) => {
+    //     if (resp.status === 200) {
+    //       setSnackOpen(true)
+    //     }
+    //   }, (error) => {
+    //     console.log(error.text)
+    //   })
+    //   e.target.reset()
+
+      setSnackOpen(true)
+  }
+
   return (
     <div className='contact'>
       <h2 className='contact__title'>Contact me</h2>
@@ -49,25 +76,41 @@ export default function Contact() {
           <div className='contact__title2'>
             Message me
           </div>
+
+          <Snackbar
+            style={{ top: '100px'}}
+            anchorOrigin={{ vertical: 'top', horizontal: 'center'}}
+            open={snackOpen}
+            onClose={handleSnackClose}
+            autoHideDuration={3000}
+            message="Message Sent Succesfully"
+          >
+            <MuiAlert style={{fontSize: '17px'}} elevation={6} severity="success" variant="filled">
+              Message Sent Succesfully
+            </MuiAlert>
+          </Snackbar>
           
-          <form action="#">
+          <form onSubmit={sendEmail}>
             <div className="contact__fields">
               <div className="contact__fieldName">
-                <input className='contact__input' type="text" placeholder="Name" required />
+                <input className='contact__input' type="text" placeholder="Name" required name='name'/>
               </div>
               <div className="contact__fieldEmail">
-                <input className='contact__input' type="email" placeholder="Email" required />
+                <input className='contact__input' type="email" placeholder="Email" required name='email'/>
               </div>
             </div>
                         
             <div className="contact__fieldSubject">
-              <input className='contact__input' type="text" placeholder="Subject" required />
+              <input className='contact__input' type="text" placeholder="Subject" required name='subject'/>
             </div>
             <div className="contact__fieldTextarea">
-              <textarea className='contact__input' cols="30" rows="10" placeholder="Message..." required></textarea>
+              <textarea className='contact__input' cols="30" rows="10" placeholder="Message..." required name='message'></textarea>
             </div>
             <div className="contact__button">
-              <button type="submit">Send message</button>
+              <button type="submit">
+                {/* Send message */}
+                <CircularProgress style={{color: '#fff', width: '30px', height: '30px', padding: 'auto'}} />
+              </button>
             </div>
           </form>
           

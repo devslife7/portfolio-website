@@ -103,6 +103,10 @@
   margin-bottom: 15px;
 }
 
+.contact__loadingLogo {
+  color: #fff
+}
+
 .contact__button {
   height: 47px;
   width: 170px;
