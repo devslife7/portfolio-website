@@ -2,38 +2,57 @@
   font-family: 'Ubuntu', sans-serif;
   background-color: #f7f7f7;
   transition: all 0.5s ease;
+
+  background: url("../../images/background3-cropped(3).jpg") no-repeat center;
+  /* covers the whole screen */
+  background-size: cover; 
+  /* fixes its position */
+  background-attachment: fixed; 
+
+  padding: 100px 0px;
+}
+
+.skills__span {
+  color: var(--color-primary);
 }
 
 .skills__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   
-  text-align: center;
+  max-width: 1000px;
+}
+
+.skills__title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0px auto 60px auto;
 }
 
 .skills__header {
-  margin-top: 30px;
-  font-size: 20px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
 }
-
 
 .skills__section {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  margin: 40px 0px;
+  margin-bottom: 20px;
 }
 
 /* --- Skill Card Styles --- */
 
 .skill__card {
-  /* background-color: red; */
-  margin: 10px 10px;
-  padding: 5px;
-  width: 130px;
-  height: 160px;
+  margin: 10px 40px 10px 0px;
+  padding: 4px;
+  width: 100px;
+  height: 120px;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
@@ -48,7 +67,7 @@
 }
 
 .skill__img {
-  width: 4rem;
+  width: 3.5rem;
   border-radius: 4px;
 }
 
@@ -76,5 +95,9 @@
   .skill__card {
     height: 110px;
     width: 80px;
+  }
+
+  .skills__section {
+    justify-content: space-evenly;
   }
 }

@@ -1,6 +1,6 @@
 export const futFriendsObj = {
   name: "FutFriends",
-  darkTheme: true,
+  darkTheme: false,
   flipped: false,
   img: require("../../images/futFriends.png"),
 
@@ -14,7 +14,7 @@ export const futFriendsObj = {
 
 export const proTaskObj = {
   name: "proTaskr",
-  darkTheme: false,
+  darkTheme: true,
   flipped: true,
   img: require("../../images/protask.png"),
 
@@ -28,7 +28,7 @@ export const proTaskObj = {
 
 export const triviappObj = {
   name: "TriviApp",
-  darkTheme: true,
+  darkTheme: false,
   flipped: false,
   img: require("../../images/triviapp.png"),
 
@@ -42,7 +42,7 @@ export const triviappObj = {
 
 export const netflixObj = {
   name: "Netflix Clone",
-  darkTheme: false,
+  darkTheme: true,
   flipped: true,
   img: require("../../images/netflix-clone.png"),
 

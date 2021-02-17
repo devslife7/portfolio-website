@@ -42,13 +42,13 @@ export default function Navbar({ toggle }) {
               </Link>
             </li>
             <li className="nav__item">
-              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
-                Skills
+              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+                Projects
               </Link>
             </li>
             <li className="nav__item">
-              <Link className="nav__link" to='projects' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
-                Projects
+              <Link className="nav__link" to='skills' smooth='true' duration={500} spy={true} exact='true' offset={-80}>
+                Skills
               </Link>
             </li>
             <li className="nav__item">

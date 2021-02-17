@@ -22,8 +22,8 @@ function App() {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <Home />
-        <Skills />
         <Projects />
+        <Skills />
         <About />
         <Contact />
         <Footer />
