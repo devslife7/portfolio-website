@@ -144,3 +144,10 @@
     margin-top: 50px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact {
+    min-height: 700px;
+    padding: 40px 0px
+  }
+}

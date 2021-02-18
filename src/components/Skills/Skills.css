@@ -1,6 +1,5 @@
 .skills {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #f7f7f7;
   transition: all 0.5s ease;
 
   background: url("../../images/background3-cropped(3).jpg") no-repeat center;
@@ -27,7 +26,8 @@
 
 .skills__content {
   z-index: 10;
-  padding: 100px inherit;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -112,5 +112,10 @@
 
   .skills__section {
     justify-content: space-evenly;
+  }
+
+  .skills__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

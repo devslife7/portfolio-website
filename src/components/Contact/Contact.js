@@ -38,13 +38,9 @@ export default function Contact() {
           setIsLoading(false)
           clearForm()
         }
-        // e.target.reset()
       }, (error) => {
         console.log(error.text)
       })
-      // e.target.reset()
-
-      // setSnackOpen(true)
   }
 
   return (
