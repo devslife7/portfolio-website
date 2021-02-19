@@ -1,7 +1,7 @@
 .contact {
   font-family: 'Ubuntu', sans-serif;
-  min-height: 700px;
-  padding: 100px 0px
+  min-height: 800px;
+  padding: 110px 0px;
 }
 
 .contact__content {
@@ -33,6 +33,12 @@
   margin-bottom: 10px;
 }
 
+.contact__title3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .contact__infoRow {
   display: flex;
   height: 65px;
@@ -56,6 +62,7 @@
 .contact__text {
   text-align: justify;
   margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 .contact__fields {
@@ -84,7 +91,7 @@
 .contact__fieldTextarea {
   height: 50px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .contact__fieldName {

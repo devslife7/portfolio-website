@@ -86,7 +86,7 @@ export default function Contact() {
         </div>
 
         <div className='contact__columnRight'>
-          <div className='contact__title2'>
+          <div className='contact__title3'>
             Message me
           </div>
 
