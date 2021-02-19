@@ -18,6 +18,10 @@
   margin-bottom: 80px;
 }
 
+.contact__span {
+  color: var(--color-primary)
+}
+
 .contact__columnLeft {
   width: 100%;
   margin-right: 70px;

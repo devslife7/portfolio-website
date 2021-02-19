@@ -11,7 +11,7 @@ export default function Sidebar({ isOpen, toggle }) {
       </div>
         <ul className='sidebar__menu'>
           <Link className='sidebar__link' to='home' onClick={toggle} smooth='true' duration={500} spy={true} exact='true' offset={-80}>
-            H<span className="sidebar__span">om</span>e
+            Ho<span className="sidebar__span">m</span>e
           </Link>
           <Link className='sidebar__link' to='skills' onClick={toggle} smooth='true' duration={500} spy={true} exact='true' offset={-80}>
             Ski<span className="sidebar__span">ll</span>s

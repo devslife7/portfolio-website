@@ -45,7 +45,7 @@ export default function Contact() {
 
   return (
     <div className='contact'>
-      <h2 className='contact__title'>Contact me</h2>
+      <h2 className='contact__title'>C<span className='contact__span'>on</span>tact</h2>
 
       <div className='contact__content container'>
 
