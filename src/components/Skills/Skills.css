@@ -4,9 +4,7 @@
 
   background: url("../../images/background3-cropped(3).jpg") no-repeat center;
   /* covers the whole screen */
-  background-size: cover; 
-  /* fixes its position */
-  background-attachment: fixed; 
+  background-size: cover;
 
   position: relative;
   z-index: 1;

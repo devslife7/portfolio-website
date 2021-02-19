@@ -5,8 +5,10 @@ export default function About() {
   return (
     <div className='about'>
       <h2>About me</h2>
+      <h4>Hello, I'm Marcos Velasco and I'm a Full Stack Software Developer</h4>
       <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque quis augue dapibus, vehicula purus eget, mattis purus. Donec suscipit porttitor mi sit amet euismod. Mauris condimentum, purus a sodales mollis, erat quam imperdiet velit, ut porta tortor dui non nunc. Aliquam erat volutpat. In ultricies lectus vel tincidunt eleifend. Cras pulvinar sagittis massa sit amet condimentum. Phasellus ac nibh vel erat malesuada sodales id laoreet eros.
+        
+        I enjoy creating things that focus on usefulness and elegance. Let's get in touch! 
       </p>
     </div>
   )

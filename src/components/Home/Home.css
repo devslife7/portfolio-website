@@ -3,8 +3,6 @@
   background: url("../../images/background3-cropped(3).jpg") no-repeat center;
   /* covers the whole screen */
   background-size: cover; 
-  /* fixes its position */
-  /* background-attachment: fixed;  */
 
   display: flex;
   height: 100vh;
