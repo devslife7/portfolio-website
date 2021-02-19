@@ -55,7 +55,9 @@ export default function Contact() {
             Get in Touch
           </div>
           <p className='contact__text'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?
+            I'm excited to connect with new people or answer any questions you might have.
+            Easily send me a message using the following form including your email,
+            and I will be in touch as soon as possible.
           </p>
 
           <div className='contact__infoRow'>
