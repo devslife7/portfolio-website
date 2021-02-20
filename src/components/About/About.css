@@ -68,16 +68,19 @@
 }
 
 .about__socialIcons {
+  /* background-color: red; */
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   margin: 20px 0px
 }
 
 .about__socialIconLink {
   color: #fff;
   font-size: 34px;
+  margin: 0 50px 50px 0;
 }
 
 .about__socialIconLink:hover {
