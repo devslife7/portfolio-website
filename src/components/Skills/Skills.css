@@ -17,10 +17,6 @@
   position: absolute;
 }
 
-.skills__span {
-  color: var(--color-primary);
-}
-
 .skills__content {
   z-index: 10;
   padding-top: 100px;

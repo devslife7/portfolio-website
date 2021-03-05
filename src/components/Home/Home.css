@@ -44,10 +44,6 @@
   margin-bottom: 10px;
 }
 
-.home__span {
-  color: var(--color-primary);
-}
-
 .home__spanTypewriter {
   margin-left: 8px;
   color: var(--color-primary);

@@ -50,7 +50,3 @@
   color: var(--color_primary);
   transition: 0.2s ease-in-out;
 }
-
-.sidebar__span {
-  color: var(--color-primary);
-}
