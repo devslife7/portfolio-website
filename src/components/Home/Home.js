@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./Home.css"
 import Typewriter from "typewriter-effect"
 import { Link } from "react-scroll"
@@ -7,13 +7,29 @@ export default function Home() {
   const [hover, setHover] = useState(false)
   const [themeColor, setThemeColor] = useState("--color-orange")
 
+  const handleChangeThemeColor = color => {
+    const body = document.getElementsByTagName("BODY")[0]
+    body.style.setProperty("--color-primary", `var(${color})`)
+    setThemeColor(color)
+  }
+
+  useEffect(() => {
+    const storageThemeColor = localStorage.getItem("theme-color")
+
+    if (storageThemeColor) {
+      handleChangeThemeColor(storageThemeColor)
+    } else {
+      handleChangeThemeColor("--color-orange")
+    }
+  }, [])
+
   const onHover = () => {
     setHover(!hover)
   }
 
   const handleThemeChange = e => {
-    const body = document.getElementsByTagName("BODY")[0]
-    body.style.setProperty("--color-primary", `var(${e.target.id})`)
+    handleChangeThemeColor(e.target.id)
+    localStorage.setItem("theme-color", `${e.target.id}`)
   }
 
   return (
