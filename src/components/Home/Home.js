@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
-import './Home.css'
-import Typewriter from 'typewriter-effect'
-import { Link } from 'react-scroll'
+import React, { useState } from "react"
+import "./Home.css"
+import Typewriter from "typewriter-effect"
+import { Link } from "react-scroll"
 
 export default function Home() {
   const [hover, setHover] = useState(false)
 
   const onHover = () => {
     setHover(!hover)
+  }
+
+  const handleClick = e => {
+    const body = document.getElementsByTagName("BODY")[0]
+    body.style.setProperty("--color-primary", "yellow")
+    console.log(e.target.id)
   }
 
   return (
@@ -22,7 +28,7 @@ export default function Home() {
           <span className='home__spanTypewriter'>
             <Typewriter
               options={{
-                strings: ['Developer', 'Engineer'],
+                strings: ["Developer", "Engineer"],
                 autoStart: true,
                 loop: true,
               }}
@@ -45,6 +51,19 @@ export default function Home() {
           >
             My Projects
           </Link>
+        </div>
+
+        <div id='theme-orange' className='home__themeSelector' onClick={handleClick}>
+          orange
+        </div>
+        <div id='theme-blue' className='home__themeSelector' onClick={handleClick}>
+          blue
+        </div>
+        <div id='theme-green' className='home__themeSelector' onClick={handleClick}>
+          green
+        </div>
+        <div id='theme-red' className='home__themeSelector' onClick={handleClick}>
+          red
         </div>
       </div>
     </div>
