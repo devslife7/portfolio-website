@@ -15,17 +15,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* --- Theme Colors --- */
+  --color-crimson: #dc133d;
+  --color-orange: #ff8e00;
+  --color-green: #01bf71;
+  --color-purple: #cc00ff;
+  --color-blue: #1976d2;
+
+  /* --- Primary Color --- */
   --color-primary: #ff8e00;
 }
-
-/* :root { */
-/* --color-primary: #1976d2; */
-/* --color-primary: #ff8e00; */
-/* --color-primary: #dc133d; */
-/* --color-primary: #01bf71; */
-
-/* --color-secondary: #dc133d; */
-/* } */
 
 .container {
   max-width: 1300px;

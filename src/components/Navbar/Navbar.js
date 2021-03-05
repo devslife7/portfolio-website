@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { FaBars } from 'react-icons/fa'
-import './Navbar.css'
-import { animateScroll as scroll } from 'react-scroll'
-import { Link } from 'react-scroll'
+import React, { useEffect, useState } from "react"
+import { FaBars } from "react-icons/fa"
+import "./Navbar.css"
+import { animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 export default function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false)
@@ -16,7 +16,7 @@ export default function Navbar({ toggle }) {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav)
+    window.addEventListener("scroll", changeNav)
   }, [])
 
   const toggleHome = () => {
@@ -25,10 +25,10 @@ export default function Navbar({ toggle }) {
 
   return (
     <>
-      <div className={`nav ${scrollNav && 'nav--background'}`}>
+      <div className={`nav ${scrollNav && "nav--background"}`}>
         <div className='nav__content container'>
           <div className='nav__logo' onClick={toggleHome}>
-            Portfo<span className='nav__logoColor'>lio</span>
+            Portfo<span className='theme__span'>lio</span>
             {/* Marc<span className="nav__logoColor">os</span> Velasco */}
           </div>
           <div className='nav__mobileIcon' onClick={toggle}>

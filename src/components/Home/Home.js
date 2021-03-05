@@ -5,15 +5,15 @@ import { Link } from "react-scroll"
 
 export default function Home() {
   const [hover, setHover] = useState(false)
+  const [themeColor, setThemeColor] = useState("--color-orange")
 
   const onHover = () => {
     setHover(!hover)
   }
 
-  const handleClick = e => {
+  const handleThemeChange = e => {
     const body = document.getElementsByTagName("BODY")[0]
-    body.style.setProperty("--color-primary", "yellow")
-    console.log(e.target.id)
+    body.style.setProperty("--color-primary", `var(${e.target.id})`)
   }
 
   return (
@@ -53,17 +53,32 @@ export default function Home() {
           </Link>
         </div>
 
-        <div id='theme-orange' className='home__themeSelector' onClick={handleClick}>
-          orange
-        </div>
-        <div id='theme-blue' className='home__themeSelector' onClick={handleClick}>
-          blue
-        </div>
-        <div id='theme-green' className='home__themeSelector' onClick={handleClick}>
-          green
-        </div>
-        <div id='theme-red' className='home__themeSelector' onClick={handleClick}>
-          red
+        <div className='home__themeSelectorContainer'>
+          <div
+            id='--color-crimson'
+            className={`home__themeCircles ${themeColor === "--color-crimson" && "theme-active"}`}
+            onClick={handleThemeChange}
+          ></div>
+          <div
+            id='--color-orange'
+            className={`home__themeCircles ${themeColor === "--color-orange" && "theme-active"}`}
+            onClick={handleThemeChange}
+          ></div>
+          <div
+            id='--color-green'
+            className={`home__themeCircles ${themeColor === "--color-green" && "theme-active"}`}
+            onClick={handleThemeChange}
+          ></div>
+          <div
+            id='--color-purple'
+            className={`home__themeCircles ${themeColor === "--color-purple" && "theme-active"}`}
+            onClick={handleThemeChange}
+          ></div>
+          <div
+            id='--color-blue'
+            className={`home__themeCircles ${themeColor === "--color-blue" && "theme-active"}`}
+            onClick={handleThemeChange}
+          ></div>
         </div>
       </div>
     </div>
