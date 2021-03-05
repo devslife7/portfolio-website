@@ -14,7 +14,7 @@ export default function Home() {
     <div className='home'>
       <div className='home__content container'>
         <div className='home__text-1'>
-          Hello<span className='home__span'>,</span> my name is
+          Hello<span className='theme__span'>,</span> my name is
         </div>
         <div className='home__text-2'>Marcos Velasco</div>
         <div className='home__text-3'>
