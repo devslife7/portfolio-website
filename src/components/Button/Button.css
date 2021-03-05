@@ -1,6 +1,4 @@
 .btn {
-  font-family: 'Ubuntu', sans-serif;
-
   display: inline-block;
   background: var(--color-primary);
   color: #fff;

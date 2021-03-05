@@ -18,10 +18,7 @@ export default function Home() {
         </div>
         <div className='home__text-2'>Marcos Velasco</div>
         <div className='home__text-3'>
-          <p>
-            I'm a Full Stack Software and this is a test for the line break for this world
-            has
-          </p>
+          <p>I'm a Full Stack Software</p>
           <span className='home__spanTypewriter'>
             <Typewriter
               options={{

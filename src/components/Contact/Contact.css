@@ -1,5 +1,4 @@
 .contact {
-  font-family: 'Ubuntu', sans-serif;
   min-height: 800px;
   padding: 110px 0px;
 }
@@ -19,7 +18,7 @@
 }
 
 .contact__span {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .contact__columnLeft {
@@ -85,7 +84,7 @@
 
   font-size: 17px;
   transition: all 0.3s ease;
-  
+
   margin-bottom: 15px;
 }
 
@@ -102,12 +101,12 @@
   margin-right: 20px;
 }
 
-.contact__fieldTextarea{
+.contact__fieldTextarea {
   height: 80px;
 }
 
 .contact__loadingLogo {
-  color: #fff
+  color: #fff;
 }
 
 .contact__button {
@@ -141,8 +140,7 @@
 .contact__fieldTextarea textarea,
 .contact__fieldSubject input,
 .contact__fieldEmail input,
-.contact__fieldName input
-{
+.contact__fieldName input {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -159,6 +157,6 @@
 @media (max-width: 480px) {
   .contact {
     min-height: 700px;
-    padding: 40px 0px
+    padding: 40px 0px;
   }
 }
