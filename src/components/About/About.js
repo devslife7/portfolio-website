@@ -31,7 +31,7 @@ export default function About() {
             <FaFacebook/>
           </a>
           <a className='about__socialIconLink' href='https://www.youtube.com/channel/UCBmRRBM8cmE29ZGba51Sbzw' target='#' arial-label='Youtube'>
-            <FaYoutube/>
+            <FaYoutube />
           </a>
           <a className='about__socialIconLink' href='https://www.instagram.com/markuz1457' target='#' arial-label='Instagram'>
             <FaInstagram/>

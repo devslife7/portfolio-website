@@ -10,6 +10,7 @@ export default function Projects({
   darkTheme,
   flipped,
   projectLink,
+  projectGif,
   technologies,
   hosting
 }) {
@@ -35,7 +36,7 @@ export default function Projects({
           </div >
             
           <div>
-            <img className="project__img" src={img} alt={`${name} preview`} />
+            <img className="project__img" src={projectGif} alt={`${name} preview`} />
           </div>
         </div >
       </div>
