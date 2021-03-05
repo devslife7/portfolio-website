@@ -2,7 +2,6 @@ export const futFriendsObj = {
   name: "FutFriends",
   darkTheme: false,
   flipped: false,
-  img: require("../../images/futFriends.png"),
 
   topLine: "React, Redux, Material UI",
   description: "Look up popular upcoming matches and create watchparties with your friends.",
@@ -17,7 +16,6 @@ export const proTaskObj = {
   name: "proTaskr",
   darkTheme: true,
   flipped: true,
-  img: require("../../images/protask.png"),
 
   topLine: "React, Redux, Material UI",
   description: "Helps your teams to organize, track, and manage their work.",
@@ -32,7 +30,6 @@ export const triviappObj = {
   name: "TriviApp",
   darkTheme: false,
   flipped: false,
-  img: require("../../images/triviapp.png"),
 
   topLine: "React, Redux, Material UI",
   description: "Play a game of Trivia solo or with your friends.",
@@ -47,7 +44,6 @@ export const netflixObj = {
   name: "Netflix Clone",
   darkTheme: true,
   flipped: true,
-  img: require("../../images/netflix-clone.png"),
 
   topLine: "React, Material UI",
   description: "Browse the Netflix Library.",

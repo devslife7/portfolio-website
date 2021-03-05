@@ -6,7 +6,6 @@ import './Projects.css'
 export default function Projects({
   name,
   description,
-  img,
   darkTheme,
   flipped,
   projectLink,
