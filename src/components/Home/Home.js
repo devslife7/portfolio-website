@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import './Home.css'
-import Typewriter from "typewriter-effect"
-import { Link } from "react-scroll"
+import Typewriter from 'typewriter-effect'
+import { Link } from 'react-scroll'
 
 export default function Home() {
   const [hover, setHover] = useState(false)
@@ -11,28 +11,31 @@ export default function Home() {
   }
 
   return (
-    <div className="home">
-      <div className="home__content container">
-        <div className="home__text-1">Hello<span className="home__span">,</span> my name is</div>
-        <div className="home__text-2">Marcos Velasco</div>
-        <div className="home__text-3">
+    <div className='home'>
+      <div className='home__content container'>
+        <div className='home__text-1'>
+          Hello<span className='home__span'>,</span> my name is
+        </div>
+        <div className='home__text-2'>Marcos Velasco</div>
+        <div className='home__text-3'>
           <p>
-            I'm a Full Stack Software
+            I'm a Full Stack Software and this is a test for the line break for this world
+            has
           </p>
           <span className='home__spanTypewriter'>
             <Typewriter
               options={{
-                strings: ["Developer", "Engineer"],
+                strings: ['Developer', 'Engineer'],
                 autoStart: true,
-                loop:true
-              }} 
+                loop: true,
+              }}
             />
           </span>
         </div>
 
-        <div className="home__btnWrapper">
+        <div className='home__btnWrapper'>
           <Link
-            className="home__btn"
+            className='home__btn'
             to='projects'
             smooth='true'
             duration={500}

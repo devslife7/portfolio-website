@@ -1,55 +1,58 @@
 export const futFriendsObj = {
-  name: "FutFriends",
+  name: 'FutFriends',
   darkTheme: false,
   flipped: false,
 
-  topLine: "React, Redux, Material UI",
-  description: "Look up popular upcoming matches and create watchparties with your friends.",
-  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png",
+  topLine: 'React, Redux, Material UI',
+  description:
+    'Look up popular upcoming matches and create watchparties with your friends.',
+  projectLink:
+    'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
   projectGif: 'https://media.giphy.com/media/HeeRZi4hagLEl3qPIY/giphy.gif',
 
   technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
-  hosting: ['AWS']
+  hosting: ['AWS'],
 }
 
 export const proTaskObj = {
-  name: "proTaskr",
+  name: 'proTaskr',
   darkTheme: true,
   flipped: true,
 
-  topLine: "React, Redux, Material UI",
-  description: "Helps your teams to organize, track, and manage their work.",
-  projectLink: "https://production-branch.d18y87fht79wtx.amplifyapp.com/",
+  topLine: 'React, Redux, Material UI',
+  description: 'Helps your teams to organize, track, and manage their work.',
+  projectLink: 'https://production-branch.d18y87fht79wtx.amplifyapp.com/',
   projectGif: 'https://media.giphy.com/media/0amLFjL4e8V4c05NBH/giphy.gif',
 
   technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
-  hosting: ['Heroku', 'AWS']
+  hosting: ['Heroku', 'AWS'],
 }
 
 export const triviappObj = {
-  name: "TriviApp",
+  name: 'TriviApp',
   darkTheme: false,
   flipped: false,
 
-  topLine: "React, Redux, Material UI",
-  description: "Play a game of Trivia solo or with your friends.",
-  projectLink: "https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png",
+  topLine: 'React, Redux, Material UI',
+  description: 'Play a game of Trivia solo or with your friends.',
+  projectLink:
+    'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
   projectGif: 'https://media.giphy.com/media/X1wSXy6At9dGcodECs/giphy.gif',
 
   technologies: ['React', 'Ruby on Rails', 'Postgresql', 'Material UI'],
-  hosting: ['Heroku']
+  hosting: ['Heroku'],
 }
 
 export const netflixObj = {
-  name: "Netflix Clone",
+  name: 'Netflix Clone',
   darkTheme: true,
   flipped: true,
 
-  topLine: "React, Material UI",
-  description: "Browse the Netflix Library.",
-  projectLink: "https://netflix-clone-9e2cc.web.app/",
-  projectGif: 'https://media.giphy.com/media/HcYkewFEf5R2cmNZoE/giphy.gif',
+  topLine: 'React, Material UI',
+  description: 'Browse the Netflix Library.',
+  projectLink: 'https://netflix-clone-9e2cc.web.app/',
+  projectGif: 'https://media.giphy.com/media/5nVrXkCH2dwi0ZrzmR/giphy.gif',
 
   technologies: ['React', 'CSS', 'Movie API'],
-  hosting: ['Firebase']
+  hosting: ['Firebase'],
 }
