@@ -4,14 +4,13 @@ export const futFriendsObj = {
   flipped: false,
 
   topLine: 'React, Redux, Material UI',
-  description:
-    'Look up popular upcoming matches and create watchparties with your friends.',
-  projectLink:
-    'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
+  description: 'Look up popular upcoming matches and create watchparties with your friends.',
+  projectLink: 'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
   projectGif: 'https://media.giphy.com/media/HeeRZi4hagLEl3qPIY/giphy.gif',
 
   technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
   hosting: ['AWS'],
+  live: false,
 }
 
 export const proTaskObj = {
@@ -26,6 +25,7 @@ export const proTaskObj = {
 
   technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
   hosting: ['Heroku', 'AWS'],
+  live: true,
 }
 
 export const triviappObj = {
@@ -35,12 +35,12 @@ export const triviappObj = {
 
   topLine: 'React, Redux, Material UI',
   description: 'Play a game of Trivia solo or with your friends.',
-  projectLink:
-    'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
+  projectLink: 'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
   projectGif: 'https://media.giphy.com/media/X1wSXy6At9dGcodECs/giphy.gif',
 
   technologies: ['React', 'Ruby on Rails', 'Postgresql', 'Material UI'],
   hosting: ['Heroku'],
+  live: false,
 }
 
 export const netflixObj = {
@@ -50,9 +50,10 @@ export const netflixObj = {
 
   topLine: 'React, Material UI',
   description: 'Browse the Netflix Library.',
-  projectLink: 'https://netflix-clone-9e2cc.web.app/',
+  projectLink: 'https://netflix-clone-1e91f.web.app/',
   projectGif: 'https://media.giphy.com/media/5nVrXkCH2dwi0ZrzmR/giphy.gif',
 
   technologies: ['React', 'CSS', 'Movie API'],
   hosting: ['Firebase'],
+  live: true,
 }
