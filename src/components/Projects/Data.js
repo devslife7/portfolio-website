@@ -5,12 +5,12 @@ export const futFriendsObj = {
 
   topLine: 'React, Redux, Material UI',
   description: 'Look up popular upcoming matches and create watchparties with your friends.',
-  projectLink: 'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
+  projectLink: 'https://production-branch.d3jmky7p6jn18u.amplifyapp.com/',
   projectGif: 'https://media.giphy.com/media/HeeRZi4hagLEl3qPIY/giphy.gif',
 
   technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
-  hosting: ['AWS'],
-  live: false,
+  hosting: ['Heroku', 'AWS'],
+  live: true,
 }
 
 export const proTaskObj = {
