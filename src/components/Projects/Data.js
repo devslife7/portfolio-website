@@ -8,7 +8,7 @@ export const futFriendsObj = {
   projectLink: 'https://production-branch.d3jmky7p6jn18u.amplifyapp.com/',
   projectGif: 'https://media.giphy.com/media/HeeRZi4hagLEl3qPIY/giphy.gif',
 
-  technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
+  technologies: ['React Js', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
   hosting: ['Heroku', 'AWS'],
   live: true,
 }
@@ -23,7 +23,7 @@ export const proTaskObj = {
   projectLink: 'https://production-branch.d18y87fht79wtx.amplifyapp.com/',
   projectGif: 'https://media.giphy.com/media/0amLFjL4e8V4c05NBH/giphy.gif',
 
-  technologies: ['React', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
+  technologies: ['React Js', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
   hosting: ['Heroku', 'AWS'],
   live: true,
 }
@@ -38,7 +38,7 @@ export const triviappObj = {
   projectLink: 'https://steemitimages.com/DQmNUbQja94BzGPUfFxx8HZJFEERfNQ8CQ8GmAGN1miDpvh/Coming-Soon.png',
   projectGif: 'https://media.giphy.com/media/X1wSXy6At9dGcodECs/giphy.gif',
 
-  technologies: ['React', 'Ruby on Rails', 'Postgresql', 'Material UI'],
+  technologies: ['React Js', 'Ruby on Rails', 'Postgresql', 'Material UI'],
   hosting: ['Heroku'],
   live: false,
 }
@@ -49,11 +49,12 @@ export const netflixObj = {
   flipped: false,
 
   topLine: 'React, Material UI',
-  description: 'Browse the Netflix Library.',
+  description:
+    'Browse the Netflix library and watch its movie trailers. This Netflix clone was done using React Js',
   projectLink: 'https://netflix-clone-1e91f.web.app/',
   projectGif: 'https://media.giphy.com/media/5nVrXkCH2dwi0ZrzmR/giphy.gif',
 
-  technologies: ['React', 'CSS', 'Movie API'],
+  technologies: ['React Js', 'CSS', 'Movie API'],
   hosting: ['Firebase'],
   live: true,
 }

@@ -6,9 +6,9 @@
 }
 
 .project__wrapper {
-  min-height: 600px;
+  min-height: 38rem;
   /* overwrites the padding: 1rem in index.css file */
-  padding: 0;
+  /* padding: 0; */
 
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,6 @@
 .project__info {
   min-width: 320px;
   margin-bottom: 20px;
-  /* background-color: blue; */
 }
 
 .project__name {
@@ -61,8 +60,6 @@
 }
 
 .project__header {
-  /* temporary color red */
-  /* background-color: red; */
   background-color: #000;
   padding: 5rem 0 0 0;
   color: #fff;
@@ -81,6 +78,32 @@
   border: solid 2px var(--color-primary);
   width: 600px;
   border-radius: 7px;
+}
+
+/* Custom button for live demo link */
+.project__btn-container {
+  text-align: center;
+}
+.project__demo-btn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 10px 22px;
+  /* margin-top: 20px; */
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+.project__demo-btn:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+  background: none;
+}
+.project__demo-btn:active {
+  outline: none;
 }
 
 @media (max-width: 768px) {
