@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../Button'
 import Tag from './Tag'
 import './Projects.css'
 
@@ -34,7 +33,16 @@ export default function Projects({
                 <div className='project__title'>Hosted via:</div>
                 <div className='project__technologies'>{renderTags(hosting)}</div>
 
-                <Button href={projectLink}> Live Demo </Button>
+                <div className='project__btn-container'>
+                  <a
+                    target='_blank'
+                    className='project__demo-btn'
+                    href={projectLink}
+                    rel='noopener noreferrer'
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
             )}
           </div>
