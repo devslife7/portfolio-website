@@ -1,6 +1,6 @@
 export const futFriendsObj = {
   name: 'FutFriends',
-  darkTheme: false,
+  darkTheme: true,
   flipped: false,
 
   topLine: 'React, Redux, Material UI',
@@ -15,8 +15,8 @@ export const futFriendsObj = {
 
 export const proTaskObj = {
   name: 'proTaskr',
-  darkTheme: true,
-  flipped: true,
+  darkTheme: false,
+  flipped: false,
 
   topLine: 'React, Redux, Material UI',
   description: 'Helps your teams to organize, track, and manage their work.',
@@ -30,7 +30,7 @@ export const proTaskObj = {
 
 export const triviappObj = {
   name: 'TriviApp',
-  darkTheme: false,
+  darkTheme: true,
   flipped: false,
 
   topLine: 'React, Redux, Material UI',
@@ -45,8 +45,8 @@ export const triviappObj = {
 
 export const netflixObj = {
   name: 'Netflix Clone',
-  darkTheme: true,
-  flipped: true,
+  darkTheme: false,
+  flipped: false,
 
   topLine: 'React, Material UI',
   description: 'Browse the Netflix Library.',
