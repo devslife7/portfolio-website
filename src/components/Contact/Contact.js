@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './Contact.css'
 import ReCAPTCHA from 'react-google-recaptcha'
 import PersonIcon from '@material-ui/icons/Person'
@@ -16,6 +16,7 @@ export default function Contact() {
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
+  const captchaRef = useRef(null)
 
   const clearForm = () => {
     setName('')
@@ -31,6 +32,10 @@ export default function Contact() {
   const sendEmail = e => {
     e.preventDefault()
     setIsLoading(true)
+
+    // Getting recaptcha value and resetting it
+    const token = captchaRef.current.getValue()
+    captchaRef.current.reset()
 
     emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
       resp => {
@@ -151,7 +156,7 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
+            <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} ref={captchaRef} />
 
             <div className='contact__button'>
               <button type='submit'>
