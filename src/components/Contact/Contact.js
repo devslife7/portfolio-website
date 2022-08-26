@@ -27,29 +27,22 @@ export default function Contact() {
     setSnackOpen(false)
   }
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault()
     setIsLoading(true)
 
-    emailjs
-      .sendForm(
-        'service_o753f7s',
-        'template_dg1h7vq',
-        e.target,
-        'user_fGVSXEIS9yWRUzLBPtd5K'
-      )
-      .then(
-        (resp) => {
-          if (resp.status === 200) {
-            setSnackOpen(true)
-            setIsLoading(false)
-            clearForm()
-          }
-        },
-        (error) => {
-          console.log(error.text)
+    emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
+      resp => {
+        if (resp.status === 200) {
+          setSnackOpen(true)
+          setIsLoading(false)
+          clearForm()
         }
-      )
+      },
+      error => {
+        console.log(error.text)
+      }
+    )
   }
 
   return (
@@ -62,9 +55,8 @@ export default function Contact() {
         <div className='contact__columnLeft'>
           <div className='contact__title2'>Get in Touch</div>
           <p className='contact__text'>
-            I'm excited to connect with new people or answer any questions you might have.
-            Easily send me a message using the following form including your email, and I
-            will be in touch as soon as possible.
+            I'm excited to connect with new people or answer any questions you might have. Easily send me a
+            message using the following form including your email, and I will be in touch as soon as possible.
           </p>
 
           <div className='contact__infoRow'>
@@ -103,12 +95,7 @@ export default function Contact() {
             autoHideDuration={3000}
             message='Message Sent Succesfully'
           >
-            <MuiAlert
-              style={{ fontSize: '17px' }}
-              elevation={6}
-              severity='success'
-              variant='filled'
-            >
+            <MuiAlert style={{ fontSize: '17px' }} elevation={6} severity='success' variant='filled'>
               Message Sent Succesfully
             </MuiAlert>
           </Snackbar>
@@ -119,7 +106,7 @@ export default function Contact() {
                 <input
                   className='contact__input'
                   value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={e => setName(e.target.value)}
                   type='text'
                   placeholder='Name'
                   required
@@ -130,7 +117,7 @@ export default function Contact() {
                 <input
                   className='contact__input'
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={e => setEmail(e.target.value)}
                   type='email'
                   placeholder='Email'
                   required
@@ -143,7 +130,7 @@ export default function Contact() {
               <input
                 className='contact__input'
                 value={subject}
-                onChange={(e) => setSubject(e.target.value)}
+                onChange={e => setSubject(e.target.value)}
                 type='text'
                 placeholder='Subject'
                 required
@@ -156,7 +143,7 @@ export default function Contact() {
                 cols='30'
                 rows='10'
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={e => setMessage(e.target.value)}
                 placeholder='Message...'
                 required
                 name='message'
@@ -165,9 +152,7 @@ export default function Contact() {
             <div className='contact__button'>
               <button type='submit'>
                 {isLoading ? (
-                  <CircularProgress
-                    style={{ width: '30px', height: '30px', color: 'inherit' }}
-                  />
+                  <CircularProgress style={{ width: '30px', height: '30px', color: 'inherit' }} />
                 ) : (
                   'Send Message'
                 )}
