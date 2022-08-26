@@ -38,6 +38,29 @@ export default function Contact() {
     captchaRef.current.reset()
     console.log('token: ', token)
 
+    // await axios.post(process.env.REACT_APP_API_URL, {token})
+    // .then(res =>  console.log(res))
+    // .catch((error) => {
+    // console.log(error);
+
+    const googleURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`
+    const googleURL2 = `https://www.google.com/recaptcha/api/siteverify`
+
+    console.log(googleURL)
+
+    // fetch(googleURL).then(resp => console.log(resp.json()))
+    console.log(fetch(googleURL))
+
+    // await axios.post(
+    //   `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
+    //   );
+
+    // fetch(popularLeaguesURL)
+    //   .then(resp => resp.json())
+    //   .then(popularLeagues => {
+    //     dispatch({ type: 'ADD_DISPLAY_LEAGUES', payload: popularLeagues })
+    //   })
+
     // emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
     //   resp => {
     //     if (resp.status === 200) {
