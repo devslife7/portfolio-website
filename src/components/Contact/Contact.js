@@ -36,19 +36,24 @@ export default function Contact() {
     // Getting recaptcha value and resetting it
     const token = captchaRef.current.getValue()
     captchaRef.current.reset()
+    console.log('token: ', token)
 
-    emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
-      resp => {
-        if (resp.status === 200) {
-          setSnackOpen(true)
-          setIsLoading(false)
-          clearForm()
-        }
-      },
-      error => {
-        console.log(error.text)
-      }
-    )
+    // emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
+    //   resp => {
+    //     if (resp.status === 200) {
+    //       setSnackOpen(true)
+    //       setIsLoading(false)
+    //       clearForm()
+    //     }
+    //   },
+    //   error => {
+    //     console.log(error.text)
+    //   }
+    // )
+
+    setSnackOpen(true)
+    setIsLoading(false)
+    clearForm()
   }
 
   return (
