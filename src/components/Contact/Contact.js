@@ -8,14 +8,15 @@ import MuiAlert from '@material-ui/lab/Alert'
 import emailjs from 'emailjs-com'
 import Snackbar from '@material-ui/core/Snackbar'
 import CircularProgress from '@material-ui/core/CircularProgress'
+const axios = require('axios')
 
 export default function Contact() {
   const [snackOpen, setSnackOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('asdf')
+  const [email, setEmail] = useState('asd@asdf')
+  const [subject, setSubject] = useState('asdf')
+  const [message, setMessage] = useState('asdf')
   const captchaRef = useRef(null)
 
   const clearForm = () => {
@@ -29,7 +30,7 @@ export default function Contact() {
     setSnackOpen(false)
   }
 
-  const sendEmail = e => {
+  const sendEmail = async e => {
     e.preventDefault()
     setIsLoading(true)
 
@@ -38,11 +39,12 @@ export default function Contact() {
     captchaRef.current.reset()
     console.log('token: ', token)
 
-    await axios.post('http://localhost:2000/', {token})
-    .then(res =>  console.log(res))
-    .catch((error) => {
-    console.log(error);
-    })
+    await axios
+      .post('http://localhost:2000/post', { token })
+      .then(res => console.log(res))
+      .catch(error => {
+        console.log(error)
+      })
 
     // const googleURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`
     // const googleURL2 = `https://www.google.com/recaptcha/api/siteverify`
