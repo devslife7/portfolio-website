@@ -38,10 +38,11 @@ export default function Contact() {
     captchaRef.current.reset()
     console.log('token: ', token)
 
-    // await axios.post(process.env.REACT_APP_API_URL, {token})
-    // .then(res =>  console.log(res))
-    // .catch((error) => {
-    // console.log(error);
+    await axios.post('http://localhost:2000/', {token})
+    .then(res =>  console.log(res))
+    .catch((error) => {
+    console.log(error);
+    })
 
     // const googleURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`
     // const googleURL2 = `https://www.google.com/recaptcha/api/siteverify`
@@ -51,7 +52,7 @@ export default function Contact() {
     // console.log(googleURL)
 
     // fetch(googleURL).then(resp => console.log(resp.json()))
-    fetch(testing, { mode: 'no-cors' }).then(resp => console.log(resp))
+    // fetch(testing, { mode: 'no-cors' }).then(resp => console.log(resp))
 
     // await axios.post(
     //   `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
