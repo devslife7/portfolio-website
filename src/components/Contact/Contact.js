@@ -13,13 +13,11 @@ const axios = require('axios')
 export default function Contact() {
   const [snackOpen, setSnackOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const [name, setName] = useState('asdf')
-  const [email, setEmail] = useState('asd@asdf')
-  const [subject, setSubject] = useState('asdf')
-  const [message, setMessage] = useState('asdf')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
   const captchaRef = useRef(null)
-
-  console.log('this is a test to relaunch')
 
   const clearForm = () => {
     setName('')
