@@ -19,6 +19,8 @@ export default function Contact() {
   const [message, setMessage] = useState('asdf')
   const captchaRef = useRef(null)
 
+  console.log('this is a test to relaunch')
+
   const clearForm = () => {
     setName('')
     setEmail('')
