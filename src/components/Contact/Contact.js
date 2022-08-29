@@ -65,8 +65,7 @@ export default function Contact() {
 
   const verifyHuman = async () => {
     const token = captchaRef.current.getValue()
-    const resp = await axios.post('http://localhost:2000/post', { token })
-    // captchaRef.current.reset()
+    const resp = await axios.post(`${process.env.REACT_APP_SERVER_URL}/post`, { token })
     return resp.data
   }
 
