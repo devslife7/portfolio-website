@@ -90,7 +90,7 @@
 .contact__fieldTextarea {
   height: 50px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .contact__fieldName {
@@ -108,6 +108,7 @@
 .contact__button {
   height: 47px;
   width: 170px;
+  margin-top: 1rem;
 }
 
 .contact__button button {

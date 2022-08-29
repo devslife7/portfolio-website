@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './Contact.css'
+import ReCAPTCHA from 'react-google-recaptcha'
 import PersonIcon from '@material-ui/icons/Person'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import EmailIcon from '@material-ui/icons/Email'
@@ -7,14 +8,16 @@ import MuiAlert from '@material-ui/lab/Alert'
 import emailjs from 'emailjs-com'
 import Snackbar from '@material-ui/core/Snackbar'
 import CircularProgress from '@material-ui/core/CircularProgress'
+const axios = require('axios')
 
 export default function Contact() {
   const [snackOpen, setSnackOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('asdf')
+  const [email, setEmail] = useState('asd@asdf')
+  const [subject, setSubject] = useState('asdf')
+  const [message, setMessage] = useState('asdf')
+  const captchaRef = useRef(null)
 
   const clearForm = () => {
     setName('')
@@ -27,22 +30,41 @@ export default function Contact() {
     setSnackOpen(false)
   }
 
-  const sendEmail = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
+    e.persist()
     setIsLoading(true)
 
-    emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
-      resp => {
-        if (resp.status === 200) {
-          setSnackOpen(true)
-          setIsLoading(false)
-          clearForm()
-        }
-      },
-      error => {
-        console.log(error.text)
-      }
+    const isHuman = await verifyHuman()
+    if (!isHuman) {
+      setIsLoading(false)
+      alert('reCaptcha Error')
+      return
+    }
+
+    const emailjsResponse = await emailjs.sendForm(
+      'service_o753f7s',
+      'template_dg1h7vq',
+      e.target,
+      'user_fGVSXEIS9yWRUzLBPtd5K'
     )
+
+    if (emailjsResponse.status === 200) {
+      setSnackOpen(true)
+    } else {
+      console.log(emailjsResponse)
+      alert('Failed to send Email.')
+    }
+
+    captchaRef.current.reset()
+    setIsLoading(false)
+    clearForm()
+  }
+
+  const verifyHuman = async () => {
+    const token = captchaRef.current.getValue()
+    const resp = await axios.post(`${process.env.REACT_APP_SERVER_URL}/post`, { token })
+    return resp.data
   }
 
   return (
@@ -100,7 +122,7 @@ export default function Contact() {
             </MuiAlert>
           </Snackbar>
 
-          <form onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit}>
             <div className='contact__fields'>
               <div className='contact__fieldName'>
                 <input
@@ -149,6 +171,9 @@ export default function Contact() {
                 name='message'
               ></textarea>
             </div>
+
+            <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} ref={captchaRef} />
+
             <div className='contact__button'>
               <button type='submit'>
                 {isLoading ? (

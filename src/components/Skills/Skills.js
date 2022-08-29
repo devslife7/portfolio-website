@@ -4,9 +4,9 @@ import { frontEnd, backEnd, other } from './Data'
 import './Skills.css'
 
 export default function Skills() {
-  const renderSkills = (list) => {
+  const renderSkills = list => {
     return list.map((skill, idx) => {
-      return <SkillsCard key={idx} name={skill.name} imgLink={skill.imgLink} />
+      return <SkillsCard key={idx} name={skill.name} img={skill.img} />
     })
   }
 
