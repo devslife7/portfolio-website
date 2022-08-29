@@ -32,37 +32,41 @@ export default function Contact() {
 
   const handleSubmit = async e => {
     e.preventDefault()
+    e.persist()
     setIsLoading(true)
 
-    const isHuman2 = await isHuman()
-    if (!isHuman2) {
+    const isHuman = await verifyHuman()
+    if (!isHuman) {
       setIsLoading(false)
       alert('reCaptcha Error')
       return
     }
 
-    // emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
-    //   resp => {
-    //     if (resp.status === 200) {
-    //       setSnackOpen(true)
-    //       setIsLoading(false)
-    //       clearForm()
-    //     }
-    //   },
-    //   error => {
-    //     console.log(error.text)
-    //   }
-    // )
+    // console.log('reaches here')
 
-    setSnackOpen(true)
+    const emailjsResponse = await emailjs.sendForm(
+      'service_o753f7s',
+      'template_dg1h7vq',
+      e.target,
+      'user_fGVSXEIS9yWRUzLBPtd5K'
+    )
+
+    if (emailjsResponse.status === 200) {
+      setSnackOpen(true)
+    } else {
+      console.log(emailjsResponse)
+      alert('Failed to send Email.')
+    }
+
+    captchaRef.current.reset()
     setIsLoading(false)
     clearForm()
   }
 
-  const isHuman = async () => {
+  const verifyHuman = async () => {
     const token = captchaRef.current.getValue()
     const resp = await axios.post('http://localhost:2000/post', { token })
-    captchaRef.current.reset()
+    // captchaRef.current.reset()
     return resp.data
   }
 
