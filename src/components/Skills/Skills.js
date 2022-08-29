@@ -2,11 +2,12 @@ import React from 'react'
 import SkillsCard from './SkillsCard'
 import { frontEnd, backEnd, other } from './Data'
 import './Skills.css'
+import logo from '../../images/github-icon.svg'
 
 export default function Skills() {
-  const renderSkills = (list) => {
+  const renderSkills = list => {
     return list.map((skill, idx) => {
-      return <SkillsCard key={idx} name={skill.name} imgLink={skill.imgLink} />
+      return <SkillsCard key={idx} name={skill.name} img={skill.img} />
     })
   }
 
@@ -33,6 +34,9 @@ export default function Skills() {
         </div>
 
         <div className='skills__section'>{renderSkills(other)}</div>
+
+        <div>Logo svg render</div>
+        <img src={logo} alt='svg logo' />
       </div>
     </div>
   )

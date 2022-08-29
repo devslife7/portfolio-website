@@ -1,79 +1,81 @@
+import githubLogo from '../../images/github-icon.svg'
+
 export const frontEnd = [
   {
-    name: "HTML",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+    name: 'HTML',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png',
   },
   {
-    name: "CSS",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
+    name: 'CSS',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png',
   },
   {
-    name: "Javascript (ES6)",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+    name: 'Javascript (ES6)',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png',
   },
   {
-    name: "React",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+    name: 'React',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png',
   },
   {
-    name: "Redux",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
+    name: 'Redux',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png',
   },
   // {
   //   name: "Thunk",
-  //   imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
+  //   img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
   // },
   {
-    name: "Material UI",
-    imgLink: "https://avatars.githubusercontent.com/u/33663932?s=200&v=4"
-  }
+    name: 'Material UI',
+    img: 'https://avatars.githubusercontent.com/u/33663932?s=200&v=4',
+  },
 ]
 export const backEnd = [
   {
-    name: "Ruby",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png"
+    name: 'Ruby',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png',
   },
   {
-    name: "Rails",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png"
+    name: 'Rails',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png',
   },
   {
-    name: "Postgresql",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
+    name: 'Postgresql',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png',
   },
   {
-    name: "SQLite",
-    imgLink: "https://avatars.githubusercontent.com/u/48680494?s=400&u=4ab40856ccfa4616130de822486cc01350b34e09&v=4"
+    name: 'SQLite',
+    img: 'https://avatars.githubusercontent.com/u/48680494?s=400&u=4ab40856ccfa4616130de822486cc01350b34e09&v=4',
   },
   {
-    name: "SQL",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png"
-  }
+    name: 'SQL',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png',
+  },
 ]
 
 export const other = [
   {
-    name: "Git",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+    name: 'Git',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png',
   },
   {
-    name: "GitHub",
-    imgLink: "https://media-exp1.licdn.com/dms/image/C560BAQGO4Mxhy8KAgQ/company-logo_200_200/0/1564764741123?e=1621468800&v=beta&t=B0eo9GFF56no9E7xv4XN5wK-s3QwW0mx8pFRhgYee2k"
+    name: 'GitHub',
+    img: githubLogo,
   },
   {
-    name: "JSON",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png"
+    name: 'JSON',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png',
   },
   {
-    name: "Heroku",
-    imgLink: "https://avatars.githubusercontent.com/u/23211?s=200&v=4"
+    name: 'Heroku',
+    img: 'https://avatars.githubusercontent.com/u/23211?s=200&v=4',
   },
   {
-    name: "Amazon Web Services",
-    imgLink: "https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png"
+    name: 'Amazon Web Services',
+    img: 'https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png',
   },
   {
-    name: "Firebase",
-    imgLink: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-  }
+    name: 'Firebase',
+    img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png',
+  },
 ]
