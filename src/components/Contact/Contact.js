@@ -30,46 +30,34 @@ export default function Contact() {
     setSnackOpen(false)
   }
 
-  const sendEmail = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
     setIsLoading(true)
 
     // Getting recaptcha value and resetting it
     const token = captchaRef.current.getValue()
     // captchaRef.current.reset()
-    // console.log('token: ', token)
 
-    axios.post('http://localhost:2000/post', { token }).then(resp11 => console.log(resp11))
+    const resp = await axios.post('http://localhost:2000/post', { token })
 
-    // const testing =
-    //   'https://www.google.com/recaptcha/api/siteverify?secret=6LfUsR4hAAAAALB1HzBKLmhWrArNItA3G9RMEmgD&response=03ANYolqs238GPrpA-O9XMGTgKTOZOBnpzTCdxlVecLkGmENPTbFLpngwOgM5IM2S0S-XGQCBlnKMywMIaRe2ixKNPAyTxb-bY6-hOPZLIjMzXjTFe-8ZUWmH5UUO1hAK1nBP6fr44yzWqYEYwEznLYX5jOHvaISBIt2A-m9XFMNhnlP-HVwJTxmUE2n5FhhYOOFoTdYDhY5coLUS5Mlfl6YEceuoAZAAVyqM9YhDwR0gjRayr5h0jB0UOyoyTyyrJtTx1iTlKOw8xUrNbpMqq2vRHgWuYZ7F-pFIUfua-jXpUmWJ3BvDqcUMFCxokE93vbfatNQSgV1g-dhmH7nkwZT7jVanzBZDeoqWLQJcWYjkTioU1zvFOnpmfZdZo-sDJwQ_A9gJXbi1mflqOdXCzXGaqMEJk5ZD3hbtFM3w5imEtUyVBjUh5xGGuXrS1rtMzXjZvgc4P6eHrYHeGSl_N5_V3sVQ-XH0HSvWTx1VtB7EZnQXZyYgWcoPJwRfCg0jq6BTf2byibopqXjH9t1MgDRy0QcgF6h7Axl6XVb_T9TmVWK5lF5kpDCx_DLH_EJ8UYhtYUj2S02bAsmPx3w4eSwZXVnTnZKXbIA'
-    // console.log(googleURL)
+    if (resp.data === 'Robot') {
+      setIsLoading(false)
+      alert('reCaptcha Error')
+      return
+    }
 
-    // fetch(googleURL).then(resp => console.log(resp.json()))
-    // fetch(testing, { mode: 'no-cors' }).then(resp => console.log(resp))
-
-    // await axios.post(
-    //   `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
-    //   );
-
-    // fetch(popularLeaguesURL)
-    //   .then(resp => resp.json())
-    //   .then(popularLeagues => {
-    //     dispatch({ type: 'ADD_DISPLAY_LEAGUES', payload: popularLeagues })
-    //   })
-
-    // emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
-    //   resp => {
-    //     if (resp.status === 200) {
-    //       setSnackOpen(true)
-    //       setIsLoading(false)
-    //       clearForm()
-    //     }
-    //   },
-    //   error => {
-    //     console.log(error.text)
-    //   }
-    // )
+    emailjs.sendForm('service_o753f7s', 'template_dg1h7vq', e.target, 'user_fGVSXEIS9yWRUzLBPtd5K').then(
+      resp => {
+        if (resp.status === 200) {
+          setSnackOpen(true)
+          setIsLoading(false)
+          clearForm()
+        }
+      },
+      error => {
+        console.log(error.text)
+      }
+    )
 
     setSnackOpen(true)
     setIsLoading(false)
@@ -131,7 +119,7 @@ export default function Contact() {
             </MuiAlert>
           </Snackbar>
 
-          <form onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit}>
             <div className='contact__fields'>
               <div className='contact__fieldName'>
                 <input
