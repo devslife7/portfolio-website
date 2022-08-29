@@ -2,7 +2,6 @@ import React from 'react'
 import SkillsCard from './SkillsCard'
 import { frontEnd, backEnd, other } from './Data'
 import './Skills.css'
-import logo from '../../images/github-icon.svg'
 
 export default function Skills() {
   const renderSkills = list => {
