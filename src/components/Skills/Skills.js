@@ -34,9 +34,6 @@ export default function Skills() {
         </div>
 
         <div className='skills__section'>{renderSkills(other)}</div>
-
-        <div>Logo svg render</div>
-        <img src={logo} alt='svg logo' />
       </div>
     </div>
   )
