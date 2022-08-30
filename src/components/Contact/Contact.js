@@ -35,6 +35,7 @@ export default function Contact() {
     e.persist()
     setIsLoading(true)
 
+    // Verifies that user is a Human
     const isHuman = await verifyHuman()
     if (!isHuman) {
       setIsLoading(false)
@@ -42,6 +43,7 @@ export default function Contact() {
       return
     }
 
+    // Sends email after verification
     const emailjsResponse = await emailjs.sendForm(
       'service_o753f7s',
       'template_dg1h7vq',
