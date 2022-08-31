@@ -20,7 +20,7 @@ export const proTaskObj = {
 
   topLine: 'React, Redux, Material UI',
   description: 'Helps your teams to organize, track, and manage their work.',
-  projectLink: 'https://production-branch.d18y87fht79wtx.amplifyapp.com/',
+  projectLink: 'https://main.d18y87fht79wtx.amplifyapp.com/',
   projectGif: 'https://media.giphy.com/media/0amLFjL4e8V4c05NBH/giphy.gif',
 
   technologies: ['React JS', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
