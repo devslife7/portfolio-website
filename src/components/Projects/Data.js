@@ -5,7 +5,7 @@ export const futFriendsObj = {
 
   topLine: 'React, Redux, Material UI',
   description: 'Look up popular upcoming matches and create watchparties with your friends.',
-  projectLink: 'https://main.d3jmky7p6jn18u.amplifyapp.com/',
+  projectLink: 'https://main.d3kudh92mvp4u8.amplifyapp.com/',
   projectGif: 'https://media.giphy.com/media/HeeRZi4hagLEl3qPIY/giphy.gif',
 
   technologies: ['React JS', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
