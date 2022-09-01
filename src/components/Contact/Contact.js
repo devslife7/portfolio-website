@@ -8,7 +8,7 @@ import MuiAlert from '@material-ui/lab/Alert'
 import emailjs from 'emailjs-com'
 import Snackbar from '@material-ui/core/Snackbar'
 import CircularProgress from '@material-ui/core/CircularProgress'
-const axios = require('axios')
+import axios from 'axios'
 
 export default function Contact() {
   const [snackOpen, setSnackOpen] = useState(false)

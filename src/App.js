@@ -8,7 +8,6 @@ import Contact from './components/Contact'
 import Projects from './components/Projects'
 import Home from './components/Home'
 import Sidebar from './components/Sidebar'
-// const axios = require('axios')
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
