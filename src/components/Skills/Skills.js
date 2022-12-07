@@ -1,6 +1,6 @@
 import React from 'react'
 import SkillsCard from './SkillsCard'
-import { frontEnd, backEnd, other } from './Data'
+import { frontEnd, backEnd, other } from '../../data/Data'
 import './Skills.css'
 
 export default function Skills() {

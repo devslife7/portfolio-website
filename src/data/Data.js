@@ -1,4 +1,4 @@
-import githubLogo from '../../images/github-icon.svg'
+import githubLogo from '../img/github-icon.svg'
 
 export const frontEnd = [
   {
