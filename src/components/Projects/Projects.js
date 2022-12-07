@@ -1,5 +1,5 @@
 import React from 'react'
-import { triviappObj, futFriendsObj, proTaskObj, netflixObj } from './Data'
+import { triviappObj, futFriendsObj, proTaskObj, netflixObj, qatar2022 } from '../../data/Projects'
 import Header from './Header'
 import Project from './Project'
 import './Projects.css'
@@ -12,8 +12,9 @@ export default function Projects() {
       </Header>
       <Project {...futFriendsObj} />
       <Project {...proTaskObj} />
-      <Project {...triviappObj} />
-      <Project {...netflixObj} />
+      {/* <Project {...triviappObj} /> */}
+      <Project {...qatar2022} />
+      {/* <Project {...netflixObj} /> */}
     </div>
   )
 }
