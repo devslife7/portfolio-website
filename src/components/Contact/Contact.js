@@ -67,12 +67,27 @@ export default function Contact() {
   }
 
   const verifyHuman = async () => {
-    const serverURL = process.env.REACT_APP_SERVER_URL + '/post'
+    // const serverURL = process.env.REACT_APP_SERVER_URL
     const token = captchaRef.current.getValue()
-    const resp = await axios.post(serverURL, { token })
+
+    // const resp = await axios.post(serverURL, { token })
+
+    // `https://cors-anywhere.herokuapp.com/https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
+
+    const resp = await axios.post(
+      `https://cors-anywhere.herokuapp.com/https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`
+    )
+
     console.log('server response: ', resp.data)
     return resp.data
   }
+  // const verifyHuman = async () => {
+  //   const serverURL = process.env.REACT_APP_SERVER_URL + '/post'
+  //   const token = captchaRef.current.getValue()
+  //   const resp = await axios.post(serverURL, { token })
+  //   console.log('server response: ', resp.data)
+  //   return resp.data
+  // }
 
   return (
     <div className='contact'>
