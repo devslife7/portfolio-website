@@ -39,6 +39,9 @@ export default function Contact() {
     const isHuman = await verifyHuman()
     if (!isHuman) {
       setIsLoading(false)
+      console.log('isHuman: ', isHuman)
+      captchaRef.current.reset()
+      clearForm()
       alert('reCaptcha Error')
       return
     }
@@ -67,6 +70,7 @@ export default function Contact() {
     const serverURL = process.env.REACT_APP_SERVER_URL + '/post'
     const token = captchaRef.current.getValue()
     const resp = await axios.post(serverURL, { token })
+    console.log('server response: ', resp.data)
     return resp.data
   }
 

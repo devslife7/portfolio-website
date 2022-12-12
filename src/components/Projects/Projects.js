@@ -1,5 +1,5 @@
 import React from 'react'
-import { triviappObj, futFriendsObj, proTaskObj, netflixObj, qatar2022 } from '../../data/Projects'
+import { futFriendsObj, proTaskObj, qatar2022 } from '../../data/Projects'
 import Header from './Header'
 import Project from './Project'
 import './Projects.css'
