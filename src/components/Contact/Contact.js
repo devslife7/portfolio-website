@@ -75,7 +75,7 @@ export default function Contact() {
     // `https://cors-anywhere.herokuapp.com/https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
 
     const resp = await axios.post(
-      `https://cors-anywhere.herokuapp.com/https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`
+      `${process.env.REACT_APP_PROXY_SERVER}/https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`
     )
 
     console.log('server response: ', resp.data)
