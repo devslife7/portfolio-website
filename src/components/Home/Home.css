@@ -22,20 +22,20 @@
   margin: 50px 0px;
 }
 
-#circle-crimson {
-  /* background-color: #dc133d; */
-  background-color: var(--color-crimson);
+#--color-crimson {
+  background-color: #dc133d;
+  /* background-color: var(--color-crimson); */
 }
-#circle-orange {
+#--color-orange {
   background-color: var(--color-orange);
 }
-#circle-green {
+#--color-green {
   background-color: var(--color-green);
 }
-#circle-purple {
+#--color-purple {
   background-color: var(--color-purple);
 }
-#circle-blue {
+#--color-blue {
   background-color: var(--color-blue);
 }
 

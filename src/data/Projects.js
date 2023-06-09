@@ -1,3 +1,5 @@
+import qatarImg from '../img/qatarScreenshot1.png'
+
 export const futFriendsObj = {
   name: 'FutFriends',
   darkTheme: true,
@@ -49,6 +51,7 @@ export const qatar2022 = {
     'Track who is winning at Qatar World Cup 2022. A tracking website that helps my friends and I see who is winning. Official results update in real time thanks to the integration of API-FOOTBALL. Made mobile first.',
   projectLink: 'https://main.d311px3iblll1g.amplifyapp.com/',
   // projectGif: 'https://media.giphy.com/media/5nVrXkCH2dwi0ZrzmR/giphy.gif',
+  projectGif: qatarImg,
 
   technologies: ['React JS', 'Javascript', 'API-FOOTBALL'],
   hosting: ['AWS Amplify'],

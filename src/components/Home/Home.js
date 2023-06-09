@@ -71,27 +71,27 @@ export default function Home() {
 
         <div className='home__themeSelectorContainer'>
           <div
-            id='circle-crimson'
+            id='--color-crimson'
             className={`home__themeCircles ${themeColor === '--color-crimson' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='circle-orange'
+            id='--color-orange'
             className={`home__themeCircles ${themeColor === '--color-orange' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='circle-green'
+            id='--color-green'
             className={`home__themeCircles ${themeColor === '--color-green' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='circle-purple'
+            id='--color-purple'
             className={`home__themeCircles ${themeColor === '--color-purple' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='circle-blue'
+            id='--color-blue'
             className={`home__themeCircles ${themeColor === '--color-blue' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
