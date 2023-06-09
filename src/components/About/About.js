@@ -1,15 +1,7 @@
 import React from 'react'
 import './About.css'
 import LaunchIcon from '@material-ui/icons/Launch'
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaYoutube,
-  FaMedium,
-} from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaMedium } from 'react-icons/fa'
 
 export default function About() {
   return (
@@ -20,12 +12,10 @@ export default function About() {
         </h1>
         {/* <h4 className='about__header'>Hello, I'm Marcos Velasco and I'm a Full Stack Software Developer</h4> */}
         <p className='about__text'>
-          <span className='about__tab'></span>
-          Hello, I'm Marcos Velasco and I'm a Full Stack Software Developer. I have
-          experience in building Ruby on Rails and Javascript based web applications, and
-          RESTful API architecture. Possess strong skill in problem solving and teamwork.
-          Excited by challenging work and enjoy creating sites that focus on usefulness
-          and elegance.
+          Hello, I'm Marcos Velasco and I'm a Full Stack Software Developer. I have experience in building
+          Full Stack Ruby on Rails and Javascript based web applications, and RESTful API architecture.
+          Possess strong skill in problem solving and teamwork. Excited by challenging work and enjoy creating
+          sites that focus on usefulness and elegance.
         </p>
         <a
           className='about__resumeLink'

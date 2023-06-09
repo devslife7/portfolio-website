@@ -46,7 +46,7 @@ export const qatar2022 = {
   flipped: false,
 
   description:
-    'Track who is winning at Qatar World Cup 2022. Made a tracking website that helps my friends and I see who is winning. Official results update in real time thanks to the integration of API-FOOTBALL',
+    'Track who is winning at Qatar World Cup 2022. A tracking website that helps my friends and I see who is winning. Official results update in real time thanks to the integration of API-FOOTBALL',
   projectLink: 'https://main.d311px3iblll1g.amplifyapp.com/',
   // projectGif: 'https://media.giphy.com/media/5nVrXkCH2dwi0ZrzmR/giphy.gif',
 
