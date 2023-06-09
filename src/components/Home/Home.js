@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react"
-import "./Home.css"
-import Typewriter from "typewriter-effect"
-import { Link } from "react-scroll"
+import React, { useState, useEffect } from 'react'
+import './Home.css'
+import Typewriter from 'typewriter-effect'
+import { Link } from 'react-scroll'
 
 export default function Home() {
   const [hover, setHover] = useState(false)
-  const [themeColor, setThemeColor] = useState("--color-orange")
+  const [themeColor, setThemeColor] = useState('--color-orange')
 
   const handleChangeThemeColor = color => {
-    const body = document.getElementsByTagName("BODY")[0]
-    body.style.setProperty("--color-primary", `var(${color})`)
+    const body = document.getElementsByTagName('BODY')[0]
+    body.style.setProperty('--color-primary', `var(${color})`)
     setThemeColor(color)
   }
 
   useEffect(() => {
-    const storageThemeColor = localStorage.getItem("theme-color")
+    const storageThemeColor = localStorage.getItem('theme-color')
 
     if (storageThemeColor) {
       handleChangeThemeColor(storageThemeColor)
     } else {
-      handleChangeThemeColor("--color-orange")
+      handleChangeThemeColor('--color-orange')
     }
   }, [])
 
@@ -29,7 +29,7 @@ export default function Home() {
 
   const handleThemeChange = e => {
     handleChangeThemeColor(e.target.id)
-    localStorage.setItem("theme-color", `${e.target.id}`)
+    localStorage.setItem('theme-color', `${e.target.id}`)
   }
 
   return (
@@ -44,7 +44,7 @@ export default function Home() {
           <span className='home__spanTypewriter'>
             <Typewriter
               options={{
-                strings: ["Developer", "Engineer"],
+                strings: ['Developer', 'Engineer'],
                 autoStart: true,
                 loop: true,
               }}
@@ -71,28 +71,28 @@ export default function Home() {
 
         <div className='home__themeSelectorContainer'>
           <div
-            id='--color-crimson'
-            className={`home__themeCircles ${themeColor === "--color-crimson" && "theme-active"}`}
+            id='circle-crimson'
+            className={`home__themeCircles ${themeColor === '--color-crimson' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='--color-orange'
-            className={`home__themeCircles ${themeColor === "--color-orange" && "theme-active"}`}
+            id='circle-orange'
+            className={`home__themeCircles ${themeColor === '--color-orange' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='--color-green'
-            className={`home__themeCircles ${themeColor === "--color-green" && "theme-active"}`}
+            id='circle-green'
+            className={`home__themeCircles ${themeColor === '--color-green' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='--color-purple'
-            className={`home__themeCircles ${themeColor === "--color-purple" && "theme-active"}`}
+            id='circle-purple'
+            className={`home__themeCircles ${themeColor === '--color-purple' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
           <div
-            id='--color-blue'
-            className={`home__themeCircles ${themeColor === "--color-blue" && "theme-active"}`}
+            id='circle-blue'
+            className={`home__themeCircles ${themeColor === '--color-blue' && 'theme-active'}`}
             onClick={handleThemeChange}
           ></div>
         </div>

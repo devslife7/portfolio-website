@@ -22,20 +22,21 @@
   margin: 50px 0px;
 }
 
-#--color-crimson {
-  background-color: #dc133d;
+#circle-crimson {
+  /* background-color: #dc133d; */
+  background-color: var(--color-crimson);
 }
-#--color-orange {
-  background-color: #ff8e00;
+#circle-orange {
+  background-color: var(--color-orange);
 }
-#--color-green {
-  background-color: #01bf71;
+#circle-green {
+  background-color: var(--color-green);
 }
-#--color-purple {
-  background-color: #cc00ff;
+#circle-purple {
+  background-color: var(--color-purple);
 }
-#--color-blue {
-  background-color: #1976d2;
+#circle-blue {
+  background-color: var(--color-blue);
 }
 
 .home__themeCircles {
