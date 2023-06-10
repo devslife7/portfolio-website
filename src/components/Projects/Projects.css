@@ -75,6 +75,10 @@
   color: var(--color-primary);
 }
 
+.project_img_container {
+  width: 600px;
+}
+
 .project__img {
   border: solid 2px var(--color-primary);
   border-radius: 7px;
@@ -122,7 +126,7 @@
     padding: 3.5rem 1rem;
   }
 
-  .project__img {
+  .project_img_container {
     width: 100%;
     margin-top: 40px;
   }

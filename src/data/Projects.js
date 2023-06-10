@@ -53,7 +53,6 @@ export const qatar2022 = {
   projectLink: 'https://main.d311px3iblll1g.amplifyapp.com/',
   projectGif:
     'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzE3MGMxOWE1ZWM3MmVjNjJlYzcwZmNmMTJlOTA2ZDdjODVlNDk2YyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/iRTgPcLFK51zGgoUvw/giphy.gif',
-  // projectGif: qatarImg,
 
   technologies: ['React JS', 'Javascript', 'API-FOOTBALL'],
   hosting: ['AWS Amplify'],
