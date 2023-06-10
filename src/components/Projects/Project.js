@@ -7,6 +7,7 @@ export default function Projects({
   description,
   darkTheme,
   flipped,
+  mobile,
   projectLink,
   projectGif,
   technologies,
@@ -47,8 +48,13 @@ export default function Projects({
             )}
           </div>
 
-          <div>
-            <img className='project__img' src={projectGif} alt={`${name} preview`} />
+          {/* <div style={{ backgroundColor: 'red', width: '650px', maxHeight: '200px' }}> */}
+          <div style={{ width: '600px' }}>
+            <img
+              className={mobile ? 'project_img_mobile' : 'project__img'}
+              src={projectGif}
+              alt={`${name} preview`}
+            />
           </div>
         </div>
       </div>

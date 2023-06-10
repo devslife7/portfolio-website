@@ -77,8 +77,17 @@
 
 .project__img {
   border: solid 2px var(--color-primary);
-  width: 600px;
   border-radius: 7px;
+  width: inherit;
+  background-color: 'gray';
+}
+
+.project_img_mobile {
+  border: solid 2px var(--color-primary);
+  border-radius: 7px;
+  display: block;
+  width: 300px;
+  margin: auto;
 }
 
 /* Custom button for live demo link */

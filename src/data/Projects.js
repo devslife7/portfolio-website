@@ -4,6 +4,7 @@ export const futFriendsObj = {
   name: 'FutFriends',
   darkTheme: true,
   flipped: false,
+  mobile: false,
 
   topLine: 'React, Redux, Material UI',
   description: 'Look up popular upcoming matches and create watchparties with your friends.',
@@ -18,6 +19,7 @@ export const proTaskObj = {
   name: 'proTaskr',
   darkTheme: false,
   flipped: false,
+  mobile: false,
 
   topLine: 'React, Redux, Material UI',
   description: 'Helps your teams to organize, track, and manage their work.',
@@ -46,12 +48,14 @@ export const qatar2022 = {
   name: 'Qatar 2022',
   darkTheme: true,
   flipped: false,
+  mobile: true,
 
   description:
-    'Track who is winning at Qatar World Cup 2022. A tracking website that helps my friends and I see who is winning. Official results update in real time thanks to the integration of API-FOOTBALL. Made mobile first.',
+    'Track who is winning at Qatar World Cup 2022. A tracking website that helps my friends and I see who is winning. Official results update in real time thanks to the integration of API-FOOTBALL. With over 120 visits per day. Made mobile first.',
   projectLink: 'https://main.d311px3iblll1g.amplifyapp.com/',
-  // projectGif: 'https://media.giphy.com/media/5nVrXkCH2dwi0ZrzmR/giphy.gif',
-  projectGif: qatarImg,
+  projectGif:
+    'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzE3MGMxOWE1ZWM3MmVjNjJlYzcwZmNmMTJlOTA2ZDdjODVlNDk2YyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/iRTgPcLFK51zGgoUvw/giphy.gif',
+  // projectGif: qatarImg,
 
   technologies: ['React JS', 'Javascript', 'API-FOOTBALL'],
   hosting: ['AWS Amplify'],
