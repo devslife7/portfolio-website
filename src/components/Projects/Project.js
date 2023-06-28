@@ -48,7 +48,6 @@ export default function Projects({
             )}
           </div>
 
-          {/* <div style={{ backgroundColor: 'red', width: '650px', maxHeight: '200px' }}> */}
           <div className='project_img_container'>
             <img
               className={mobile ? 'project_img_mobile' : 'project__img'}

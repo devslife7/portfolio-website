@@ -1,6 +1,6 @@
-import React from "react"
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa"
-import { animateScroll as scroll } from "react-scroll"
+import React from 'react'
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   FooterContainer,
   // FooterLink,
@@ -15,7 +15,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
-} from "./FooterElements"
+} from './FooterElements'
 
 export default function Footer() {
   const toggleHome = () => {
@@ -68,9 +68,7 @@ export default function Footer() {
             <SocialLogo to='/' onClick={toggleHome}>
               Marcos Velasco
             </SocialLogo>
-            <WebsiteRights>
-              Copyright © {new Date().getFullYear()} Marcos Velasco. All rights reserved.
-            </WebsiteRights>
+            <WebsiteRights>Copyright © 2022 Marcos Velasco. All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink
                 href='https://www.linkedin.com/in/marcos-velasco-1b07a7189/'
@@ -96,7 +94,11 @@ export default function Footer() {
               >
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='https://www.youtube.com/channel/UCBmRRBM8cmE29ZGba51Sbzw' target='_blank' arial-label='Youtube'>
+              <SocialIconLink
+                href='https://www.youtube.com/channel/UCBmRRBM8cmE29ZGba51Sbzw'
+                target='_blank'
+                arial-label='Youtube'
+              >
                 <FaYoutube />
               </SocialIconLink>
               <SocialIconLink href='https://twitter.com/Markuz113' target='_blank' arial-label='Twitter'>
