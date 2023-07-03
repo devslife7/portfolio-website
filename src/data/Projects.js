@@ -10,7 +10,7 @@ export const futFriendsObj = {
   projectGif: 'https://media.giphy.com/media/HeeRZi4hagLEl3qPIY/giphy.gif',
 
   technologies: ['React JS', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
-  hosting: ['Heroku', 'AWS'],
+  hosting: ['Railway', 'AWS'],
   live: true,
 }
 export const proTaskObj = {
@@ -25,7 +25,7 @@ export const proTaskObj = {
   projectGif: 'https://media.giphy.com/media/0amLFjL4e8V4c05NBH/giphy.gif',
 
   technologies: ['React JS', 'Redux', 'Ruby on Rails', 'Postgresql', 'Material UI'],
-  hosting: ['Heroku', 'AWS'],
+  hosting: ['Railway', 'AWS'],
   live: true,
 }
 // export const triviappObj = {
