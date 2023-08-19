@@ -1,5 +1,28 @@
 import React from "react"
-import { Rails, Typescript, CSS, TailwindCSS, HTML } from "../img/icons/svgIcons"
+import {
+  Rails,
+  Typescript,
+  CSS,
+  TailwindCSS,
+  HTML,
+  Javascript,
+  NextJS,
+  ReactIcon,
+  Redux,
+  MaterialUI,
+  Ruby,
+  RailsIcon,
+  Postgresql,
+  SQLite,
+  Git,
+  Heroku,
+  AWS,
+  Firebase,
+  StyledComponents,
+  Affinity,
+  Figma,
+  // SQL,
+} from "../img/icons/svgIcons"
 
 export const frontEnd = [
   {
@@ -12,19 +35,19 @@ export const frontEnd = [
   },
   {
     name: "Javascript (ES6)",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
+    icon: <Javascript />,
   },
   {
     name: "React",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png",
+    icon: <ReactIcon />,
   },
   {
     name: "Redux",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png",
+    icon: <Redux />,
   },
   {
     name: "Material UI",
-    icon: "https://avatars.githubusercontent.com/u/33663932?s=200&v=4",
+    icon: <MaterialUI />,
   },
   {
     name: "TailwindCSS",
@@ -36,67 +59,59 @@ export const frontEnd = [
   },
   {
     name: "NextJS",
-    icon: "https://camo.githubusercontent.com/e5308d3b17439a172d6d251211f3236997225efa8253413e5715f1790a1d8404/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335343131332f6e6578746a732d69636f6e2e737667",
+    icon: <NextJS />,
   },
 ]
 export const backEnd = [
   {
     name: "Ruby",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png",
+    icon: <Ruby />,
   },
   {
     name: "Rails",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png",
-  },
-  {
-    name: "Postgresql",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png",
+    icon: <RailsIcon />,
   },
   {
     name: "SQLite",
-    icon: "https://avatars.githubusercontent.com/u/48680494?s=400&u=4ab40856ccfa4616130de822486cc01350b34e09&v=4",
+    icon: <SQLite />,
   },
   {
-    name: "SQL",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png",
+    name: "Postgresql",
+    icon: <Postgresql />,
   },
+  // {
+  //   name: "SQL",
+  //   icon: <SQL />,
+  // },
 ]
 
 export const tools = [
   {
     name: "Git",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png",
+    icon: <Git />,
   },
-  // {
-  //   name: "GitHub",
-  //   icon: githubSVG,
-  // },
-  // {
-  //   name: "JSON",
-  //   icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png",
-  // },
   {
     name: "Heroku",
-    icon: "https://avatars.githubusercontent.com/u/23211?s=200&v=4",
+    icon: <Heroku />,
   },
   {
     name: "Amazon Web Services",
-    icon: "https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png",
+    icon: <AWS />,
   },
   {
     name: "Firebase",
-    icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png",
+    icon: <Firebase />,
   },
   {
     name: "Styled-Components",
-    icon: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
+    icon: <StyledComponents />,
   },
   {
     name: "Affinity",
-    icon: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
+    icon: <Affinity />,
   },
   {
     name: "Figma",
-    icon: <Rails />,
+    icon: <Figma />,
   },
 ]
