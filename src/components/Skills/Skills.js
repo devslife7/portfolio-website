@@ -1,12 +1,12 @@
 import React from "react"
 import SkillsCard from "./SkillsCard"
-import { frontEnd, backEnd, other } from "../../data/Skills"
+import { frontEnd, backEnd, tools } from "../../data/Skills"
 import "./Skills.css"
 
 export default function Skills() {
   const renderSkills = list => {
     return list.map((skill, idx) => {
-      return <SkillsCard key={idx} name={skill.name} img={skill.img} />
+      return <SkillsCard key={idx} name={skill.name} icon={skill.icon} />
     })
   }
 
@@ -32,7 +32,7 @@ export default function Skills() {
           To<span className="theme__span">ol</span>s:
         </div>
 
-        <div className="skills__section">{renderSkills(other)}</div>
+        <div className="skills__section">{renderSkills(tools)}</div>
       </div>
     </div>
   )
