@@ -1,4 +1,4 @@
-import githubLogo from "../img/github-icon.svg"
+import githubSVG from "../img/github-icon.svg"
 
 export const frontEnd = [
   {
@@ -66,14 +66,14 @@ export const other = [
     name: "Git",
     img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png",
   },
-  {
-    name: "GitHub",
-    img: githubLogo,
-  },
-  {
-    name: "JSON",
-    img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png",
-  },
+  // {
+  //   name: "GitHub",
+  //   img: githubSVG,
+  // },
+  // {
+  //   name: "JSON",
+  //   img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png",
+  // },
   {
     name: "Heroku",
     img: "https://avatars.githubusercontent.com/u/23211?s=200&v=4",
@@ -88,6 +88,14 @@ export const other = [
   },
   {
     name: "Styled-Components",
+    img: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
+  },
+  {
+    name: "Affinity",
+    img: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
+  },
+  {
+    name: "Figma",
     img: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
   },
 ]
