@@ -1,8 +1,8 @@
-## Portfolio Website
-
-Website Link: [Portfolio](https://www.marcosvelasco.com)
+## Marcos Velasco
 
 Welcome to my portfolio website! This site showcases my skills, projects, and experiences.
+
+Website Link: [Portfolio](https://www.marcosvelasco.com)
 
 ## About
 
